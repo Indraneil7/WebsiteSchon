@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="initial-scale=1, width=device-width" /> -->
+    <meta name="viewport" content="width=1024">
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@300;400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="homepage">
+       
+        <img class="rectangle-icon1" alt="" src="HomePage_Assets/Rectangle (2).png" />
+  
+        <img class="rectangle-icon2" alt="" src="HomePage_Assets/Rectangle (3).png" />
+        <img class="rectangle-icon" alt="" src="HomePage_Assets/Rectangle (1).png" />
+      
+
+        
+      <section class="banner-wrapper">
+        <div class="banner">
+          <img class="image-27-icon" alt="" src="HomePage_Assets/Banner.png" />
+
+          <div class="powering-your-journey-persona-parent">
+            <h1 class="powering-your-journey">
+              The Schon Way
+            </h1>
+            <div class="quality">
+              <h3 class="schn-where-premium">
+                Making Range Anxiety Charging Inconvenience
+a thing of the past by Making EV Chargers Cost Effective and Smart
+              </h3>
+            </div>
+          </div>
+          <div class="banner-subtitle-wrapper">
+            <button class="clikable-button" onclick="redirectToLink()"">
+              <img
+                class="button-shape-icon"
+                alt=""
+                src="HomePage_Assets/Rectangle.png"
+              />
+              <div class="get-a-quote">Get a Quote</div>
+            </button>
+          </div>
+        </div>
+        <script>
+          function redirectToLink() {
+            window.location.href = 'getaquote.html'; // Replace with your desired URL
+          }
+        </script>
+        <header class="menu-bar">
+          <div class="menu-bar-background"></div>
+          <div class="placeholder">
+            <img
+              class="screen-shot-2023-09-04-at-340"
+              loading="lazy"
+              alt="Schon Logo"
+              src="Schonlogo.png"
+              id="screenShot20230904At340"
+            />
+          </div>
+          <nav class="menu-icon-wrapper">
+            <nav class="menu">
+              <div class="menu-item">
+                <a class="home" href="index.html">Home</a>
+              </div>
+              <div class="menu-item1">
+                <a class="home1" href="energy-maestro.html">EnergyMÆSTRO</a>
+              </div>
+              <div class="menu-item2">
+                <a class="home2" id="products-menu">Products</a>
+                <div id="submenu-overlay" class="submenu">
+                    <a href="powerup-32.html" class="submenu-item">PowerUp 32</a>
+                    <a href="powerup60.html" class="submenu-item">PowerUp 60</a>
+                    <a href="powerup-mobile.html" class="submenu-item">PowerUp Mobile</a>
+                </div>
+              </div>
+              <div class="menu-item3">
+                <a class="home3" href="company.html">Company</a>
+              </div>
+            </nav>
+          </nav>
+          <div class="letstalk-button">
+            <a href="contact.html">
+            <img
+              class="lets-talk-button-shape"
+              loading="lazy"
+                  alt="Let’s talk"
+                  src="Rectangle.png"
+            />
+             <span class="lets-talk">Let’s talk</span>
+          </a>
+        </header>
+      </section>
+      <section class="product">
+        <div class="product-heading">
+          <h2 class="our-products">Our Products</h2>
+        </div>
+        <div class="product-display">
+          <div class="product-cards-parent" id="groupContainer">
+            <div class="product-cards">
+              <img
+                class="wepik-export-20240323223609gfp-icon"
+                loading="lazy"
+                alt=""
+                src="HomePage_Assets/powerup32.png"
+              />
+
+              <div class="product-cards-child"></div>
+            </div>
+            <div class="powerup-33">
+              <b class="powerup-32">PowerUp 32</b>
+            </div>
+          </div>
+          <div class="wrapper-image-19-parent">
+            <div class="wrapper-image-19">
+              <img
+                class="image-19-icon"
+                alt=""
+                src="HomePage_Assets/powerup22.png"
+              />
+            </div>
+            <div class="card-background"></div>
+            <div class="image-container">
+              <div class="card-tag"></div>
+            </div>
+            <div class="powerup-34">
+              <b class="powerup-321">PowerUp 22</b>
+            </div>
+            
+          </div>
+          <div class="schon-brochure-5-1-parent" id="groupContainer2">
+            <img
+              class="schon-brochure-5-1"
+              loading="lazy"
+              alt=""
+              src="HomePage_Assets/powerup60.png"
+            />
+
+            <div class="frame-item"></div>
+            <div class="powerup-35">
+              <b class="powerup-322">PowerUp 60</b>
+            </div>
+          </div>
+          <div class="image-parent" id="groupContainer3">
+            <div class="image">
+              <img
+                class="pikaso-texttoimage-electric-ve-icon"
+                alt=""
+                src="HomePage_Assets/powerupmobile.png"
+              />
+            </div>
+            <div class="frame-inner"></div>
+            <b class="powerup-mobile">PowerUp Mobile</b>
+          </div>
+        </div>
+      </section>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const productsMenu = document.getElementById('products-menu');
+          const submenuOverlay = document.getElementById('submenu-overlay');
+      
+          productsMenu.addEventListener('mouseover', function() {
+            submenuOverlay.style.display = 'block';
+          });
+      
+          productsMenu.addEventListener('mouseout', function() {
+            submenuOverlay.style.display = 'none';
+          });
+      
+          submenuOverlay.addEventListener('mouseover', function() {
+            submenuOverlay.style.display = 'block';
+          });
+      
+          submenuOverlay.addEventListener('mouseout', function() {
+            submenuOverlay.style.display = 'none';
+          });
+        });
+      </script>
+      <section class="energymaestro">
+        <div class="energy-maestro-title-parent">
+          <div class="energy-maestro-title">
+            <h2 class="energymstro">EnergyMÆSTRO</h2>
+          </div>
+          <div class="software-description">
+            <div class="description-background-parent">
+              <div class="description-background"></div>
+              <div class="software-title">
+                <h3 class="our-charge-network">
+                  Our Charge Network Management Software
+                </h3>
+              </div>
+              <div class="energymaestro-schns-innovat-container">
+                <p class="energymaestro-schns-innovat">
+                  EnergyMaestro, Schön's innovative charge network management
+                  system, is the nexus of advanced EV infrastructure management
+                  and energy optimization. This platform, tailored for the
+                  evolving needs of electric vehicle support, streamlines
+                  operations, and reduces costs.
+                </p>
+                <p class="blank-line">&nbsp;</p>
+                <p class="energymaestro-ensures-reliable">
+                  EnergyMaestro ensures reliable, efficient, and sustainable
+                  charging solutions, positioning businesses at the forefront of
+                  the green mobility revolution
+                </p>
+              </div>
+            </div>
+            <div class="vector-parent">
+              <img class="vector-icon" alt="" src="HomePage_Assets/EnergyMaestro.png" />
+
+            
+
+          
+              
+                 
+              </div>
+            </div>
+          </div>
+        <div class="energy-maestro-/div>quote">
+          <button class="clikable-button1" onclick="redirectToLearnMore()">
+            <img
+              class="energy-maestro-button-shape"
+              alt=""
+              src="HomePage_Assets/Rectangle.png"
+            />
+
+            <div class="get-a-quote1">Learn More</div>
+          </button>
+        </div>
+        <script>
+          function redirectToLearnMore() {
+            window.location.href = 'energy-maestro.html'; // Replace with your desired URL
+          }
+        </script>
+      </section>
+      <section class="industries-served">
+        <div class="industries">
+          <div class="industries-title">
+            <h2 class="industries-we-service">Industries we Service</h2>
+          </div>
+          
+          <div class="industry-list">
+           <div class="parking-background"></div>
+            <div class="auto-dealerships-category-parent">
+              <div class="auto-dealerships-category">
+                <div class="dealerships-content">
+                  <img
+                    class="filled-outline-icon"
+                    loading="lazy"
+                    alt=""
+                    src="HomePage_Assets/AutoDelearship_Icon.png"
+                  />
+                </div>
+                <div class="auto-dealerships">Auto Dealerships</div>
+              </div>
+              <div class="industry-pairs">
+                <div class="category-containers">
+                  <img
+                    class="frame-icon"
+                    loading="lazy"
+                    alt=""
+                    src="HomePage_Assets/Automaker_ICON.png"
+                  />
+                </div>
+                <div class="automakers">AutoMakers</div>
+              </div>
+              <div class="industry-pairs1">
+                <div class="frame-wrapper">
+                  <img class="frame-icon1" alt="" src="HomePage_Assets/hospitality_ICON.png" />
+                </div>
+                <div class="hospitality">Hospitality</div>
+              </div>
+              <div class="real-estate-content-wrapper">
+                <div class="real-estate-content">
+                  <div class="layer-15-wrapper">
+                    <img
+                      class="layer-15-icon"
+                      loading="lazy"
+                      alt=""
+                      src="HomePage_Assets/Real_Estate_ICON.png"
+                    />
+                  </div>
+                  <div class="real-estate">Real Estate</div>
+                </div>
+              </div>
+            </div>
+            <div class="parking-background-parent">
+              <div class="frame-parent">
+                <div class="parking-icon-parent">
+                  <div class="parking-icon">
+                    <img
+                      class="capa-1-icon"
+                      loading="lazy"
+                      alt=""
+                      src="HomePage_Assets/Parkingoperators_ICON.png"
+                    />
+                  </div>
+                  <div class="parking-operators">Parking Operators</div>
+                </div>
+                <div class="layer-1-parent">
+                  <img
+                    class="layer-1-icon"
+                    loading="lazy"
+                    alt=""
+                    src="HomePage_Assets/Retail_Icon.png"
+                  />
+
+                  <div class="retail-wrapper">
+                    <div class="retail">Retail</div>
+                  </div>
+                </div>
+                <div class="frame-group">
+                  <div class="filled-outline-wrapper">
+                    <img
+                      class="filled-outline-icon1"
+                      alt=""
+                      src="HomePage_Assets/Workplace_Icon.png"
+                    />
+                  </div>
+                  <div class="workplaces">Workplaces</div>
+                </div>
+                <div class="frame-container">
+                  <div class="layer-1-wrapper">
+                    <img
+                      class="layer-1-icon1"
+                      alt=""
+                      src="HomePage_Assets/Municipalities_Icon.png"
+                    />
+                  </div>
+                  <div class="municipalities">Municipalities</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="industries-quote">
+            <button class="clikable-button2" onclick="redirectToQuote()">
+              <img
+                class="industries-quote-background"
+                alt=""
+                src="HomePage_Assets/Rectangle.png"
+              />
+
+              <div class="get-a-quote2">Get a Quote</div>
+            </button>
+          </div>
+        </div>
+        <script>
+          function redirectToQuote() {
+            window.location.href = "getaquote.html"; // Replace with your desired URL
+          }
+        </script>
+      </section>
+      <section class="conversation-container-wrapper">
+        <div class="conversation-container">
+          <div class="conversation-title">
+            <h2 class="like-what-you">
+              Like What You See? Start a Conversation with Schön
+            </h2>
+          </div>
+          <div class="form-container">
+            <div class="form-container-child"></div>
+            <div class="required-filed-with">
+              Required filed with the mark *
+            </div>
+            <div class="form-container1">
+              <form id="contactForm" class="form-fields">
+                <div class="last-name-field">
+                  <div class="name-email-labels">
+                    <div class="business-name">
+                      <span>Business name</span>
+                      <span class="span">*</span>
+                    </div>
+                    <input class="name-input-backgrounds" type="text" id="businessName" autocomplete="off" required />
+                  </div>
+                  <div class="name-phone-fields">
+                    <div class="first-name-field">
+                      <div class="first-name-input">
+                        <div class="first-name-parent">
+                          <div class="first-name">
+                            <span>Name</span>
+                            <span class="span1">*</span>
+                          </div>
+                          <input class="first-name-input1" type="text" id="firstName" autocomplete="off" required />
+                        </div>
+                        <div class="phone">Phone</div>
+                      </div>
+                      
+                    </div>
+                    <input class="email-input-background" type="text" id="phone" autocomplete="off" />
+                  </div>
+                  <div class="name-email-labels1">
+                    <div class="email">
+                      <span>Email</span>
+                      <span class="span2">*</span>
+                    </div>
+                    <input class="name-email-labels-child" type="email" id="email" autocomplete="off" required />
+                  </div>
+                </div>
+                <div class="message-field">
+                  <div class="message-input">
+                    <div class="message">
+                      <span>Message</span>
+                      <span class="span3">*</span>
+                    </div>
+                    <textarea
+                      class="character-limit-container"
+                      placeholder="Max of 500 Characters"
+                      rows="7"
+                      cols="20"
+                      id="message"
+                      maxlength="500"
+                      autocomplete="off"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="submit-button">
+                    <img
+                      class="submit-background-icon"
+                      alt=""
+                      src="HomePage_Assets/Rectangle.png"
+                    />
+                    <div class="submit">Submit</div>
+                  </button>
+                </div>
+              </form>
+              <div id="formMessage" style="display: none;">Form submitted successfully!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+      <footer class="footer">
+        <div class="footer-background"></div>
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="index.html">
+              <div class="home4">Home</div>
+            </a>
+            <a href="">
+              <div class="footer-link-titles">
+                <div class="faqs">FAQs</div>
+              </div>
+            </a>
+            <a href="company.html">
+              <div class="footer-link-titles1">
+                <div class="company">Company</div>
+              </div>
+            </a>
+            <a href="contact.html">
+              <div class="careers-wrapper">
+                <div class="careers">Contact Us</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-links">
+            <div class="products">Products</div>
+            <a href="powerup-32.html">
+              <div class="powerup-323">PowerUp 32</div>
+            </a>
+            <a href="">
+              <div class="powerup-22">PowerUp 22</div>
+            </a>
+            <a href="powerup60.html">
+              <div class="powerup-60">PowerUp 60</div>
+            </a>
+            <a href="powerup-mobile.html">
+              <div class="powerup-mobile1">PowerUp Mobile</div>
+            </a>
+            <a href="energy-maestro.html">
+              <div class="energymaestro1">EnergyMaestro</div>
+            </a>
+          </div>
+          <div class="industry-links">
+            <div class="industries1">Industries</div>
+            <div class="auto-dealership-wrapper">
+              <div class="auto-dealership">Auto dealership</div>
+            </div>
+            <div class="automakers-wrapper">
+              <div class="automakers1">Automakers</div>
+            </div>
+            <div class="industry-links1">
+              <div class="hospitality-sector">Hospitality sector</div>
+            </div>
+            <div class="industry-links2">
+              <div class="apartments">Apartments</div>
+            </div>
+            <div class="industry-links3">
+              <div class="parking-operators1">Parking operators</div>
+            </div>
+            <div class="retail1">Retail</div>
+            <div class="workplace">Workplace</div>
+          </div>
+        </div>
+        <div class="availability">
+          <div class="contact-container">
+            <div class="talk-to-our-container">
+              <p class="talk-to-our">Talk to our agent to meet</p>
+              <p class="your-customers-needs">your customers needs today</p>
+            </div>
+            <div class="availability1">
+              <div class="mon-fri-800am-500pm-et-container">
+                <p class="mon-fri">Mon-Fri</p>
+                <p class="am-500pm-et">8:00am-5:00pm (ET)</p>
+              </div>
+            </div>
+            <div class="logo-container">
+              <div class="email-connectschonmobilityc-parent">
+                <div class="email-connectschonmobilityc">
+                  Email: sales@schonmobility.com
+                </div>
+                <div class="industry-links4">
+                  <div class="logo">
+                    <img
+                      class="vector-icon1"
+                      alt=""
+                      src="logo_1.png"
+                    />
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var screenShot20230904At340 = document.getElementById(
+        "screenShot20230904At340"
+      );
+      if (screenShot20230904At340) {
+        screenShot20230904At340.addEventListener("click", function (e) {
+          window.location.href = "index.html";
+        });
+      }
+
+      var groupContainer = document.getElementById("groupContainer");
+      if (groupContainer) {
+        groupContainer.addEventListener("click", function (e) {
+          window.location.href = "./powerup-32.html";
+        });
+      }
+
+      var groupContainer2 = document.getElementById("groupContainer2");
+      if (groupContainer2) {
+        groupContainer2.addEventListener("click", function (e) {
+          window.location.href = "./powerup60.html";
+        });
+      }
+
+      var groupContainer2 = document.getElementById("groupContainer3");
+      if (groupContainer2) {
+        groupContainer2.addEventListener("click", function (e) {
+          window.location.href = "./powerup-mobile.html";
+        });
+      }
+
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("M6gUOt3dKCCjMCTGr"); // Replace with your EmailJS user ID
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Form validation
+    const businessName = document.getElementById('businessName').value;
+    const firstName = document.getElementById('firstName').value;
+    const email = document.getElementById('email').value;
+    const phoneNumber = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    if (!businessName || !firstName || !email || !message) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    // Sanitize inputs (example using a simple function, consider using a library for more robust sanitization)
+    const sanitizeInput = (input) => input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    const sanitizedBusinessName = sanitizeInput(businessName);
+    const sanitizedFirstName = sanitizeInput(firstName);
+    const sanitizedEmail = sanitizeInput(email);
+    const sanitizedPhoneNumber = sanitizeInput(phoneNumber);
+    const sanitizedMessage = sanitizeInput(message);
+
+    // Display success message
+    document.getElementById('formMessage').style.display = 'block';
+
+    // Send form details to email (using EmailJS)
+    emailjs.send('service_sqk2fgf', 'template_8yp7np7', {
+      from_name: "Home Page Contact Form",
+      business_name: sanitizedBusinessName,
+      first_name: sanitizedFirstName,
+      email: sanitizedEmail,
+      phone: sanitizedPhoneNumber,
+      message: sanitizedMessage
+    }).then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+      console.log('FAILED...', error);
+    });
+
+    // Clear the form
+    document.getElementById('contactForm').reset();
+  });
+</script>
+  </body>
+</html>

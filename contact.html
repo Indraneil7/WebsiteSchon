@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1250">
+    <!-- <meta name="viewport" content="initial-scale=1, width=device-width" /> -->
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@300;400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="contact-us">
+      
+      
+      <main class="rectangle-container">
+        <img
+          class="rectangle-icon7"
+          alt=""
+          src="Company_rec.png"
+        />
+
+       
+      </main>
+      <div class="frame-parent9">
+        <div class="rectangle-parent1">
+          <div class="frame-child16"></div>
+          <header class="menu-bar8">
+            <div class="menu-bar-rect1"></div>
+            <div class="screen-shot-2023-09-04-at-340-container">
+              <img
+                class="screen-shot-2023-09-04-at-34010"
+                loading="lazy"
+                alt=""
+                src="Schonlogo.png"
+                id="screenShot20230904At340"
+              />
+            </div>
+            <nav class="menu-frame">
+              <nav class="menu8">
+                <div class="menu-item32">
+                  <a class="home40" href="index.html">Home</a>
+                </div>
+                <div class="menu-item33">
+                  <a class="home41" href="energy-maestro.html">EnergyMÆSTRO</a>
+                </div>
+                <div class="menu-item34">
+                  <a class="home42" id="products-menu">Products</a>
+                  <div id="submenu-overlay" class="submenu">
+                      <a href="powerup-32.html" class="submenu-item">PowerUp 32</a>
+                      <a href="powerup60.html" class="submenu-item">PowerUp 60</a>
+                      <a href="powerup-mobile.html" class="submenu-item">PowerUp Mobile</a>
+                  </div>
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const productsMenu = document.getElementById('products-menu');
+                    const submenuOverlay = document.getElementById('submenu-overlay');
+                
+                    productsMenu.addEventListener('mouseover', function() {
+                      submenuOverlay.style.display = 'block';
+                    });
+                
+                    productsMenu.addEventListener('mouseout', function() {
+                      submenuOverlay.style.display = 'none';
+                    });
+                
+                    submenuOverlay.addEventListener('mouseover', function() {
+                      submenuOverlay.style.display = 'block';
+                    });
+                
+                    submenuOverlay.addEventListener('mouseout', function() {
+                      submenuOverlay.style.display = 'none';
+                    });
+                  });
+                </script>
+                <div class="menu-item35">
+                  <a class="home43" href="company.html">Company</a>
+                </div>
+              </nav>
+            </nav>
+            <div class="letstalk-button8">
+              <img
+                class="button-rect-icon1"
+                alt=""
+                src="Rectangle.png"
+              />
+              <a class="lets-talk8" href="contact.html">Let’s talk</a>
+            </div>
+          </header>
+          <div class="lets-talk-wrapper">
+            <h2 class="lets-talk9">Let’s Talk</h2>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="group-div">
+                <div class="frame-child17"></div>
+                <div class="required-filed-with1">
+                  Required field with the mark *
+                </div>
+                <div class="business-name-field">
+                  <div class="business-name1">
+                    <span>Business name</span>
+                    <span class="span4">*</span>
+                  </div>
+                  <input class="business-name-rect" type="text" id="businessName" autocomplete="off" required />
+                </div>
+                <div class="name-fields">
+                  <div class="name-inputs">
+                    <div class="first-name-field1">
+                      <div class="first-name-input2">
+                        <div class="first-name1">
+                          <span>Name</span>
+                          <span class="span5">*</span>
+                        </div>
+                        <input class="first-name-rect" type="text" id="firstName" autocomplete="off" required />
+                      </div>
+                      <div class="phone1">Phone</div>
+                    </div>
+                    
+                  </div>
+                  <input class="phone-rect" type="text" id="phone" autocomplete="off"/>
+                </div>
+                <div class="email-field">
+                  <div class="email4">
+                    <span>Email</span>
+                    <span class="span6">*</span>
+                  </div>
+                  <input class="email-rect" type="email" id="email" autocomplete="off" required />
+                </div>
+                <div class="message-field1">
+                  <div class="message1">
+                    <span>Message</span>
+                    <span class="span7">*</span>
+                  </div>
+                  <textarea
+                    class="char-limit"
+                    placeholder="Max of 500 Characters"
+                    rows="7"
+                    cols="17"
+                    id="message"
+                    autocomplete="off"
+                    required
+                  ></textarea>
+                </div>
+                <div class="submit-btn-wrapper">
+                  <button class="submit-btn" type="submit">
+                    <!-- <img class="rectangle-icon8" alt="" src="Rectangle.png" /> -->
+                    <div class="submit1">Submit</div>
+                  </button>
+                </div>
+                <div id="formMessage" style="display:none;">Thank you for your submission!</div>
+              </div>
+            </form>
+            <!-- <div class="group-div">
+              <div class="frame-child17"></div>
+              <div class="required-filed-with1">
+                Required filed with the mark *
+              </div>
+              <div class="business-name-field">
+                <div class="business-name1">
+                  <span>Business name</span>
+                  <span class="span4">*</span>
+                </div>
+                <input class="business-name-rect" type="text" />
+              </div>
+              <div class="name-fields">
+                <div class="name-inputs">
+                  <div class="first-name-field1">
+                    <div class="first-name-input2">
+                      <div class="first-name1">
+                        <span>First name</span>
+                        <span class="span5">*</span>
+                      </div>
+                      <div class="first-name-rect"></div>
+                    </div>
+                    <div class="phone1">Phone</div>
+                  </div>
+                  <div class="last-name-field2">
+                    <div class="last-name1">Last name</div>
+                    <input class="last-name-rect" type="text" />
+                  </div>
+                </div>
+                <input class="phone-rect" type="text" />
+              </div>
+              <div class="email-field">
+                <div class="email4">
+                  <span>Email</span>
+                  <span class="span6">*</span>
+                </div>
+                <input class="email-rect" type="text" />
+              </div>
+              <div class="message-field1">
+                <div class="message1">
+                  <span>Message</span>
+                  <span class="span7">*</span>
+                </div>
+                <textarea
+                  class="char-limit"
+                  placeholder="Max of 500 Characters"
+                  rows="{7}"
+                  cols="{17}"
+                >
+                </textarea>
+              </div>
+              <div class="submit-btn-wrapper">
+                <button class="submit-btn">
+                  <img
+                    class="rectangle-icon8"
+                    alt=""
+                    src="Rectangle.png"
+                  />
+
+                  <div class="submit1">Submit</div>
+                </button>
+              </div>
+            </div> -->
+            <div class="contact-info-wrapper">
+              <div class="contact-info3">
+                <img src="ContactUS.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script>
+        (function(){
+          emailjs.init("M6gUOt3dKCCjMCTGr"); // Replace with your EmailJS user ID
+        })();
+      
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+      
+          // Form validation
+          const businessName = document.getElementById('businessName').value;
+          const firstName = document.getElementById('firstName').value;
+          const email = document.getElementById('email').value;
+          const phoneNumber = document.getElementById('phone').value;
+          const message = document.getElementById('message').value;
+      
+          if (!businessName || !firstName || !email || !message) {
+            alert('Please fill in all required fields.');
+            return;
+          }
+      
+          // Sanitize inputs (example using a simple function, consider using a library for more robust sanitization)
+          const sanitizeInput = (input) => input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      
+          const sanitizedBusinessName = sanitizeInput(businessName);
+          const sanitizedFirstName = sanitizeInput(firstName);
+          const sanitizedEmail = sanitizeInput(email);
+          const sanitizedPhoneNumber = sanitizeInput(phoneNumber);
+          const sanitizedMessage = sanitizeInput(message);
+      
+          // Display success message
+          document.getElementById('formMessage').style.display = 'block';
+      
+          // Send form details to email (using EmailJS)
+          emailjs.send('service_sqk2fgf', 'template_8yp7np7', {
+            from_name: "Contact Page Contact Form",
+            business_name: sanitizedBusinessName,
+            first_name: sanitizedFirstName,
+            email: sanitizedEmail,
+            phone: sanitizedPhoneNumber,
+            message: sanitizedMessage
+          }).then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+      
+          // Clear the form
+          document.getElementById('contactForm').reset();
+        });
+      </script>
+      <footer class="talk-to-our-agent-to-meet-your-group">
+
+        
+
+        <div class="footer8">
+          <div class="footer-background7"></div>
+          <div class="footer-content8">
+            <div class="footer-navigation1">
+              <div class="home45">
+                <a href="index.html">Home</a>
+              </div>
+              <div class="navigation-links">
+                <div class="faqs9">
+                  <a href="">FAQs</a>
+                </div>
+              </div>
+              <div class="navigation-links1">
+                <div class="company12">
+                  <a href="company.html">Company</a>
+                </div>
+              </div>
+              <div class="navigation-links2">
+                <div class="careers9">
+                  <a href="contact.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-links2">
+              <div class="products11">Products</div>
+              <div class="powerup-3213">
+                <a href="powerup-32.html">PowerUp 32</a>
+              </div>
+              <div class="powerup-229">
+                <a href="">PowerUp 22</a>
+              </div>
+              <div class="powerup-6010">
+                <a href="powerup60.html">PowerUp 60</a>
+              </div>
+              <div class="powerup-mobile11">
+                <a href="powerup-mobile.html">PowerUp Mobile</a>
+              </div>
+              <div class="energymaestro10">
+                <a href="energy-maestro.html">EnergyMaestro</a>
+              </div>
+            </div>
+            <div class="industries-links1">
+              <div class="industries12">Industries</div>
+              <div class="industries-items">
+                <div class="auto-dealership9">Auto dealership</div>
+              </div>
+              <div class="industries-items1">
+                <div class="automakers10">Automakers</div>
+              </div>
+              <div class="industries-items2">
+                <div class="hospitality-sector9">Hospitality sector</div>
+              </div>
+              <div class="industries-items3">
+                <div class="apartments9">Apartments</div>
+              </div>
+              <div class="industries-items4">
+                <div class="parking-operators10">Parking operators</div>
+              </div>
+              <div class="retail10">Retail</div>
+              <div class="workplace9">Workplace</div>
+            </div>
+          </div>
+          <div class="agent-info">
+            <div class="agent-message1">
+              <div class="talk-to-our-container9">
+                <p class="talk-to-our9">Talk to our agent to meet</p>
+                <p class="your-customers-needs9">your customers needs today</p>
+              </div>
+              <div class="footer-hours">
+                <div class="mon-fri-800am-500pm-et-container9">
+                  <p class="mon-fri9">Mon-Fri</p>
+                  <p class="am-500pm-et9">8:00am-5:00pm (ET)</p>
+                </div>
+              </div>
+              <div class="footer-contact1">
+                <div class="footer-email-info">
+                  <div class="email-connectschonmobilityc9">
+                    Email: connect@schonmobility.com
+                  </div>
+                  <div class="footer-logo1">
+                    <div class="logo7">
+                      <img
+                        class="vector-icon7"
+                        alt=""
+                        src="logo_1.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var screenShot20230904At340 = document.getElementById(
+        "screenShot20230904At340"
+      );
+      if (screenShot20230904At340) {
+        screenShot20230904At340.addEventListener("click", function (e) {
+          window.location.href = "index.html";
+        });
+      }
+    </script>
+  </body>
+</html>
