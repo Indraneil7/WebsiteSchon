@@ -75,24 +75,67 @@
           <div class="content-container">
             <div class="mission-container">
               <div class="component-1">
-                <div class="vision-container">
-                  <a href="company.html">
-                    <h3 class="our-vision">Our Vision</h3>
-                  </a>
+                <div>
+                  <!-- <a href="company.html"> -->
+                  <!-- </a> -->
+                  <div class="our-vision">Our Vision</div>
+                    
                 </div>
                 <div class="mission-titles">
-                  <a href="mission.html">
-                    <div class="our-mission">Our Mission</div>
-                  </a>
+                  <!-- <a href="mission.html"> -->
+                  <!-- </a> -->
+                  <div class="our-mission">Our Mission</div>
                 </div>
                 <div class="mission-titles1">
-                  <a href="why-us.html">
-                    <div class="why-us">Why Us</div>
+                  <!-- <a href="why-us.html"> -->
+                  <div class="why-us">Why Us</div>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="mission-statement">
+            
+            
+            <div id="ourVisionShow">
+              <div class="mission-statement">
+                <div class="to-make-green">
+                  To make green energy available for everyone everywhere thereby
+                  accelerating sustainable transportation
+                </div>
+                <div class="image_vision">
+                  <img class="icon2" loading="lazy" alt="" src="Company_Assets/Vision.png"/>
+                </div>
+              </div>
+            </div>
+
+            <div id="ourMissionShow">
+              <div class="mission-statement">
+                <div class="to-make-green">
+                  Build hyper local energy generation, storage and distribution solutions thereby inspiring ease and confidence in using sustainable mobility solutions
+                </div>
+                <div class="image_vision">
+                  <img class="icon2" loading="lazy" alt="" src="Company_Assets/Mission.png"/>
+                </div>
+              </div>
+            </div>
+
+            <div id="whyUsShow">
+              <div class="mission-statement">
+                <div class="to-make-green">
+                  <p class="to-make-green1">
+                    Rooted in the automotive heartland of Michigan, USA, Schön is a visionary force in sustainable transportation. With strategic locations across Germany, India, and Australia, we offer a global footprint and a comprehensive suite of solutions, from design and development to production. Our journey, fueled by strategic mergers and acquisitions, positions us as a holistic provider in the EV ecosystem, fast-tracking the world toward eco-friendly mobility
+                  </p>
+                  <p class="to-make-green2">
+                    Backed by a diverse leadership of industry stalwarts from automotive and energy sectors, Schön champions diversity, not just in identity but in thought and geography, ensuring a rich tapestry of insights and innovations. Our advisory board, brimming with experts, steers our journey towards redefining transportation norms
+                  </p>
+                  <p class="to-make-green3">
+                    As an early mover in the expanding market of sustainable mobility, Schön leverages its global presence and connections with grid operators to deliver unparalleled value. Join us in accelerating the shift to a cleaner, more sustainable future, where your journey is powered by foresight, innovation, and a commitment to the planet
+                </p></div>
+                <div class="image_vision">
+                  <img class="icon2" loading="lazy" alt="" src="Company_Assets/Whyus.png">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="mission-statement">
               <div class="to-make-green">
                 To make green energy available for everyone everywhere thereby
                 accelerating sustainable transportation
@@ -105,7 +148,7 @@
                 src="Company_Assets/Vision.png"
                 />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -113,6 +156,50 @@
         document.addEventListener('DOMContentLoaded', function() {
           const productsMenu = document.getElementById('products-menu');
           const submenuOverlay = document.getElementById('submenu-overlay');
+
+          const hideAll = ['ourVisionShow', 'ourMissionShow', 'whyUsShow'];
+
+          function showSection(sectionId, clickedElement) {
+            // Hide all sections
+            hideAll.forEach(id => {
+              const section = document.getElementById(id);
+              if (section) {
+                section.classList.add('hidden');
+              }
+            });
+
+            // Show the selected section
+            const sectionToShow = document.getElementById(sectionId);
+            if (sectionToShow) {
+              sectionToShow.classList.remove('hidden');
+            }
+
+            // Remove 'company-tablink' class from all links
+            const tabLinks = document.querySelectorAll('.our-vision, .our-mission, .why-us');
+            tabLinks.forEach(link => {
+              link.classList.remove('company-tablink');
+            });
+
+            // Add 'company-tablink' class to the clicked element
+            if (clickedElement) {
+              clickedElement.classList.add('company-tablink');
+            }
+          }
+
+          
+          // Add event listeners for the clickable titles
+          const visionElement = document.querySelector('.our-vision');
+          const missionElement = document.querySelector('.our-mission');
+          const whyUsElement = document.querySelector('.why-us');
+          
+          // Show the default section on page load
+          showSection('ourVisionShow', visionElement);
+
+
+          visionElement.addEventListener('click', () => showSection('ourVisionShow', visionElement));
+          missionElement.addEventListener('click', () => showSection('ourMissionShow', missionElement));
+          whyUsElement.addEventListener('click', () => showSection('whyUsShow', whyUsElement));
+
       
           productsMenu.addEventListener('mouseover', function() {
             submenuOverlay.style.display = 'block';

@@ -330,7 +330,8 @@
   /* padding: var(--padding-6xl) var(--padding-xl) var(--padding-8xs); */
   gap: var(--gap-45xl);
 }
-.our-vision {
+/* add the Company-tablink so that why we have comment this below class*/
+/* .our-vision {
   color: #2AB83D;
   margin: 0;
   position: relative;
@@ -338,7 +339,7 @@
   letter-spacing: 0.05em;
   font-weight: 600;
   font-family: inherit;
-}
+} */
 .line-icon {
   height: 2px;
   width: 118px;
@@ -432,7 +433,6 @@
   z-index: 1;
 }
 .mission-statement {
-  width: 80%;
   gap: 100px;
   display: flex;
   flex-direction: row;
@@ -848,6 +848,20 @@
   gap: var(--gap-166xl);
   line-height: normal;
   letter-spacing: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+.company-tablink {
+  color: #2AB83D;
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: inherit;
 }
 
 

@@ -1258,7 +1258,7 @@ body {
 }
 .general-parent {
   flex: 1;
-  gap: var(--gap-mid-4);
+  gap: 10px;
   min-width: 315px;
 }
 .electric-child {
@@ -1486,7 +1486,7 @@ body {
 }
 .connectivity-child {
   width: 100%;
-  height: 100%;
+  height: 97%;
   position: absolute;
   margin: 0 !important;
   top: 0;
@@ -1737,7 +1737,7 @@ body {
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
-  gap: var(--gap-mid-4);
+  gap:10px;
   min-width: 315px;
 }
 .specifications {
@@ -1745,7 +1745,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--gap-lgi-9);
+  gap: 10px;
 }
 .download-background-icon {
   height: 100%;
@@ -2204,6 +2204,8 @@ body {
   justify-content: space-between;
   padding: var(--padding-19xl-8) var(--padding-131xl) var(--padding-base-4)
     var(--padding-186xl);
+  padding-bottom: 50px;
+  padding-top: 50px;
   box-sizing: border-box;
   max-width: 100%;
   gap: var(--gap-xl);

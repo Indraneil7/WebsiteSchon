@@ -1168,3 +1168,18 @@ body {
   color: #00ff74;
   font-family: var(--font-josefin-sans);
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+.unleash-robust-ev-infrastructu-parent,.energy-cost-optimization-parent {min-width: unset !important; padding: 20px;max-width: 98% !important;}
+.frame-div,.frame-wrapper1,.frame-wrapper2{gap: 20px !important;}
+.ev-infrastructure-management-parent{ margin-left: unset;  margin-right: unset;}
+.maximise-savings-with-intellig-parent,.forge-stronger-connections-wit-parent {padding: 20px; min-width: unset;}
+.navigate-the-dynamic-energy-ma-wrapper{padding: 0 !important;}
+.integrated-crm-parent{max-width: 97% !important;}
+.footer1{padding: 30px 40px 25px !important;}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .energymaestro-child{flex-direction: column-reverse;}
+
+}

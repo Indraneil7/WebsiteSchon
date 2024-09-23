@@ -1246,8 +1246,20 @@ body {
   align-self: stretch;
   gap: var(--gap-8xs-7);
 }
-.general-parent,
-.mechanical,
+.general-parent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.mechanical{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+}
 .spec-block {
   display: flex;
   flex-direction: column;
@@ -1266,12 +1278,12 @@ body {
 }
 .general-parent {
   flex: 1;
-  gap: var(--gap-mid-4);
+  gap: 10px;
   min-width: 315px;
 }
 .electric-child {
   width: 100%;
-  height: 100%;
+  min-height: 316px;
   position: absolute;
   margin: 0 !important;
   top: 0;
@@ -1494,10 +1506,10 @@ body {
 }
 .connectivity-child {
   width: 100%;
-  height: 100%;
+  min-height: 316px;
   position: absolute;
   margin: 0 !important;
-  top: 0;
+  top: 26px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1730,7 +1742,7 @@ body {
 }
 .connectivity {
   flex-direction: column;
-  padding: var(--padding-lgi-1) var(--padding-lg) 58.7px;
+  padding: 38px 16px 0px;
   position: relative;
   gap: var(--gap-10xl-9);
   flex-shrink: 0;
@@ -1746,15 +1758,12 @@ body {
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
-  gap: var(--gap-mid-4);
+  gap: 10px;
   min-width: 315px;
 }
 .specifications {
   align-self: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--gap-lgi-9);
+  gap: 10px;
 }
 .download-background-icon {
   height: 100%;
@@ -1833,12 +1842,12 @@ body {
   gap: var(--gap-9xs);
 }
 .download-button {
+  margin-top: 20px;
   align-self: stretch;
   justify-content: center;
   padding: 0 var(--padding-xl) 0 var(--padding-3xl);
 }
-.datasheet32,
-.specifications-parent {
+.datasheet32 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -1847,7 +1856,12 @@ body {
   max-width: 100%;
 }
 .specifications-parent {
-  gap: 33.4px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 100%;
   text-align: left;
   font-size: var(--font-size-lgi-9);
   color: var(--color-dimgray);
