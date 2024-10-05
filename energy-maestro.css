@@ -23,6 +23,10 @@
   border: 1px solid var(--color-forestgreen-300);
   box-sizing: border-box;
 }
+.submenu-item:hover {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #28b83f;
+}
 
 .menu-wrapper a:-webkit-any-link {
   color: #333;
@@ -171,7 +175,7 @@ body {
 
 .submenu-item {
   display: block;
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-decoration: none;
   color: black;
   white-space: nowrap;
@@ -1168,8 +1172,27 @@ body {
   color: #00ff74;
   font-family: var(--font-josefin-sans);
 }
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-.unleash-robust-ev-infrastructu-parent,.energy-cost-optimization-parent {min-width: unset !important; padding: 20px;max-width: 98% !important;}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .energymaestro-child{padding-bottom:0 !important;width: 100%;}
+  .empowering-your-ev-charge-netw-parent{width: 100%;}
+  .energymaestro_image img{max-width: 100%;}
+  .footer-content1{gap: 20px; min-width: unset;}
+  .frame-wrapper1{width: 100%;padding-bottom: 0;}
+  .frame-wrapper3{gap: 20px;}
+  img.infrastructuremgnm-1-icon{width: 50%;}
+  .frame-wrapper2 img,.frame-wrapper1 img {max-width: 100%;}
+  .energymaestros-integrated-crm,.navigate-the-dynamic,.with-energymaestro-command{height: unset;}
+  .integratedcrm-1-icon{width: unset !important;height: unset !important;}
+  .energymaestros-integrated-crm-wrapper,.with-energymaestro-command-yo-wrapper{padding: 0;}
+  .end-user-app-integration-parent{margin: 0;min-width: unset;}
+  .enhance-user-experience-parent{gap: 20px;}
+  .enhance-user-experience-parent{min-width: unset; padding: 30px 20px;}
+  .products-parent,.energymaestro-syncs-effortless-wrapper{padding: 0;}
+  img.costoptimization-1-icon {width: 50%;}
+  .ev-infrastructure-management-parent{min-width: unset; gap: 30px;}
+  .energymaestro-inner {padding: 0;}
+.energy-cost-optimization-parent {min-width: unset !important;margin: 0; max-width: 100% !important;}
+.unleash-robust-ev-infrastructu-parent{min-width: unset !important;padding: 20px;max-width: 98% !important;}
 .frame-div,.frame-wrapper1,.frame-wrapper2{gap: 20px !important;}
 .ev-infrastructure-management-parent{ margin-left: unset;  margin-right: unset;}
 .maximise-savings-with-intellig-parent,.forge-stronger-connections-wit-parent {padding: 20px; min-width: unset;}
@@ -1177,9 +1200,69 @@ body {
 .integrated-crm-parent{max-width: 97% !important;}
 .footer1{padding: 30px 40px 25px !important;}
 }
+@media only screen and (min-width: 320px) and (max-width: 425px){.energymaestro-child{flex-direction: column-reverse;padding-bottom: 25px;}}
+@media screen and (min-device-width: 501px) and (max-device-width: 767px) {
+  .infrastructuremgnm-1-icon{margin-top: 20px !important;}
+  .costoptimization-1-icon,.integratedcrm-1-icon{margin-top: 20px !important;}
 
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) { 
+  .energymaestro-child{    flex-direction: column-reverse;}
+  .energymaestro-inner{padding: 0;}
+  .empowering-your-ev-charge-netw-parent,.infrastructuremgnm-1-icon,.ev-infrastructure-management,.features-grid,.footer-links1,.products-parent,.industries-parent{width: 100%;}
+  .icon1{width: 100%; height: unset;}
+  .with-energymaestro-command,.energymaestro-syncs-effortless,.energymaestros-integrated-crm,.navigate-the-dynamic{height: unset;}
+  .frame-div{font-size: unset; display: block;}
+  .products1,.industries2{width: 100%;font-size: 25px;}
+  .products-parent{padding: 0;}
+  .end-user-app-integration-parent,.enhance-user-experience-parent{min-width: unset;}
+  .frame-wrapper3{    flex-direction: column-reverse;}
+  .enhance-user-experience{font-size: 27px;}
+  .features-grid{gap: 15px;z-index: 1;}
+  .enhance-user-experience-parent {padding: 22px 20px; gap: 10px;}
+  .unleash-robust-ev-infrastructu-parent{ padding: 20px!important;}
+  .ev-infrastructure-management-parent,.unleash-robust-ev-infrastructu-parent{min-width: unset;}
+  /* .empowering-your-ev-container{width: 100%; font-size: 25px;} */
+  /* .energymaestro-a-leading-edge{font-size: 18px;}  */
+  .footer1{display: block;padding: 20px 30px;}
+  .footer-content1{        flex-direction: column;min-width: unset;width: 100%;gap: 18px;line-height: 1.70;}
+  .frame-wrapper2{display: block;}
+  .integrated-crm-parent{min-width: unset; gap: 30px;margin: 0;}
+  .forge-stronger-connections-wit-parent{min-width: unset;padding: 20px 30px;}
+  .integratedcrm-1-icon{max-width: 100%;height: unset;margin-top: 20px;}
+  .forge-stronger-connections{font-size: 24px;}
+  .energymaestros-integrated-crm-wrapper,.energymaestro-syncs-effortless-wrapper{padding: 0;}
+  .frame-wrapper1{display: block;}
+  .costoptimization-1-icon{max-width: 100%;}
+  .maximise-savings-with-intellig-parent{padding: 10px !important;}
+  .maximise-savings-with-intellig-parent,.navigate-the-dynamic-energy-ma-wrapper,.energy-cost-optimization-parent{min-width: 0; padding: 0;}
+  .end-user-app-integration-parent,.energy-cost-optimization-parent{margin: 0;width: 100%;}
+  .energy-cost-optimization-parent{gap: 20px;}
+  .energymaestros-integrated-crm{font-size: 16px;}
+  .ev-infrastructure-management-parent{margin: 0;}
+  .with-energymaestro-command-yo-wrapper{padding: 0;}
+  .unleash-robust-ev-container{font-size: 23px;}
+  .empowering-your-ev-container{font-size: 25px;}
+  .energymaestro-a-leading-edge{font-size: 20px;}
+  .maximise-savings-with-intellig-parent {font-size: 27px;}
+}
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
-  .energymaestro-child{flex-direction: column-reverse;}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .energymaestro2{gap: 0;}
+  .frame-div{gap: 20px;}
+  .with-energymaestro-command-yo-wrapper{padding: 0;}
+  .unleash-robust-ev-infrastructu-parent{padding: 20px;}
+  .frame-div{justify-content:space-between}
+  .integratedcrm-1-icon{width: unset;}
+  .energy-cost-optimization-parent,.integrated-crm-parent{margin: 0;}
+  .maximise-savings-with-intellig-parent{min-width: 0;}
+  .navigate-the-dynamic-energy-ma-wrapper{padding: 0;}
+  .costoptimization-1-icon{width: unset !important;height: unset !important;}
+  .maximise-savings-with-intellig-parent {padding: 30px 15px;}
+  .ev-infrastructure-management-parent{margin: 0;}
+  .unleash-robust-ev-infrastructu-parent,.maximise-savings-with-intellig-parent{width: 50%;}
+  .unleash-robust-ev-infrastructu-parent,.forge-stronger-connections-wit-parent{min-width: unset;}
+  .footer1{padding: 20px 30px ; margin-top: 20px;}
 
 }

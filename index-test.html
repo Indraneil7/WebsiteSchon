@@ -10,7 +10,7 @@
     <!-- <meta name="viewport" content="width=1024"> -->
 
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index-test.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@300;400;600;700&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" />
 
@@ -52,9 +52,6 @@ a.mail-link {text-decoration: none;color: white;}
   .column-wide{width: unset !important;}
   
 }
-
-
-
 @media screen and (max-width: 425px) {
     .column.quick-links, .column-wide, .column.products-links, .column.industries-links {padding-left:25px;}
     .column.quick-links {height: 150px;}
@@ -122,17 +119,26 @@ a.btnContactUs:hover {color: #333;}
 .topnav a {float: left;display: block;color: #333;text-align: center;padding: 5.5px 16px;text-decoration: none;font-size: 20px;font-weight: 700;font-family: Josefin Sans;}
 .topnav .icon {display: none;}
 .dropdown {float: left;overflow: hidden;}
-.header {margin: 15px 5% 0px 5%;}
-.dropdown .dropbtn {font-size: 20px;    border: none;outline: none;color: #333;padding: 14px 16px;background-color: inherit;font-family: inherit;margin: auto;font-weight: 700;}
-.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+section.banner-wrapper {background-image: url('HomePage_Assets/Banner.png');background-repeat: no-repeat;background-size: cover;}
+.dropdown .dropbtn {font-size: 20px;    border: none;outline: none;color: #333;padding: 14px 16px;background-color: inherit;font-family: inherit;margin: auto;font-weight: 700; }
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1; margin-top: -10px;}
 .dropdown-content a {float: none;color: black;  padding: 12px 16px;text-decoration: none;display: block;text-align: left;}
 .topnav a:hover, .dropdown:hover .dropbtn {color: #28b83f;}
 .dropdown-content a:hover {background-color: #ddd;color: black;}
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: grid !important; }
 a.menu-align {padding: 15px;}
-a.btnContactUs {float: right;background: #28b83f;border-radius: 20px;color: #fff;margin: 10px;width: auto;padding: 5px 15px;}
-a.btnContactUs:hover {color: #333;}
-.dropdown-content {margin-top: 3px;}
+a.btnContactUs, a.btnContactUs-desk {float: right;background: #28b83f;border-radius: 20px;color: #fff;margin: 10px;width: auto;padding: 7px 15px 5px;}
+a.btnContactUs:hover, a.btnContactUs-desk:hover {color: #333;}
+@media screen and (min-width: 600px) {
+  .header {margin: 15px 5% 0px 5%;}
+  .header-desk.topnavDesk a {font-size: 15px !important;}   
+}
+@media screen and (min-width: 426px) {
+  .header {display: none;}
+}
+@media screen and (max-width: 426px) {
+  .header-desk {display: none;}
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {display: none;}
   .topnav a.icon {float: right;display: block;}
@@ -145,20 +151,51 @@ a.btnContactUs:hover {color: #333;}
   .topnav.responsive .dropdown-content {position: relative;}
   .topnav.responsive .dropdown .dropbtn {display: block;width: 100%;text-align: left;}
 }
-@media screen and (min-width:1024px) {
-    a.active.menu-align.home {margin-left: 60px;}
-}
 @media screen and (min-width: 426px ) and (max-width: 768px) {
-    .topnav a {font-size: 16px;}
-    .dropdown .dropbtn {font-size: 16px;}
+    .topnav a, .dropdown .dropbtn {font-size: 15px;}
+    .rectangle-icon1, .rectangle-icon2, .rectangle-icon {display: none;}
+}
+@media screen and (max-width: 768px) {
+  a.active.menu-align-desk.home, a.menu-align-desk, a.btnContactUs-desk {
+    font-size: 15px !important;
+}
+.topnavDesk a {
+  font-size: 15px !important;
+}
+img.img-logo {
+    padding: 3px 0px 0px 15px;
+}
 }
 @media  screen and (max-width: 425px) {
     a.icon {margin-top: 10px;}
-    .topnav {border-radius: 20px;}
-    a.btnContactUs {border-radius: 10px;text-align: center !important;}    
+    .topnav {border-radius: 20px;margin: 15px 3% 0px 3%;}
+    a.btnContactUs {border-radius: 10px;text-align: center !important;}
+    .rectangle-icon1, .rectangle-icon2, .rectangle-icon {display: none;}
+    .powering-your-journey-persona-parent {padding-top: 90px;}
 }
-@media screen and (min-width: 1440px) {
-     a.active.menu-align.home {margin-left: 240px;}    
+@media screen AND (min-width: 1024px) {
+  img.img-logo {
+    padding: 4px 0px 0px 15px;
+  }
+}
+.header-desk {
+    margin: 15px 3% 0px;
+}
+a.menu-align-desk {
+    padding: 15px;
+}
+
+/* .dropdown:hover .dropdown-content {display: block;} */
+
+.topnavDesk {overflow: hidden;background-color: #fff;border: 1px solid #28b83f;box-shadow: 0 4px 10.2px 5px rgba(0, 0, 0, 0.25);border-radius: 40px;display: flex;justify-content: space-between;}
+.topnavDesk a {float: left;display: block;color: #333;text-decoration: none;font-size: 20px;font-weight: 700;font-family: Josefin Sans;}
+.topnavDesk .icon {display: none;}
+.topnavDesk a:hover, .dropdown:hover .dropbtn {color: #28b83f;}
+a.btnContactUs-desk {
+  color: #fff;
+}
+a.btnContactUs-desk:hover {
+  color: #333;
 }
 
 </style>
@@ -167,59 +204,55 @@ a.btnContactUs:hover {color: #333;}
   
   <body>
     <div class="homepage">
+      <img class="rectangle-icon" alt="" src="HomePage_Assets/Rectangle (1).png" />
         <img class="rectangle-icon1" alt="" src="HomePage_Assets/Rectangle (2).png" />
         <img class="rectangle-icon2" alt="" src="HomePage_Assets/Rectangle (3).png" />
-        <img class="rectangle-icon" alt="" src="HomePage_Assets/Rectangle (1).png" />
       
-
-        
+               
       <section class="banner-wrapper">
-        
-        <div class="banner">
-          <!-- <div class="header">
-            <div class="topnav" id="myTopnav">
-               <div class="main-header-logo"><a href="index.html" class="logo"><img src="Schonlogo.png"></a></div>
-               <div class="main-header-menu">
-                <a href="index.html" class="active menu-align home">Home</a>
-              <a href="energy-maestro.html" class="menu-align">EnergyMÆSTRO</a>
-              <div class="dropdown">
-                <a href="index.html" class="dropbtn">Home</a>
-                <button class="dropbtn">Products 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="powerup-32.html">PowerUp 32</a>
-                  <a href="powerup60.html">PowerUp 60</a>
-                  <a href="powerup-mobile.html">PowerUp Mobile</a>
-                </div>
-              </div> 
-              <a href="company.html" class="menu-align">Company</a>
-              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></div>
-              <div class="main-header-btntalk"><a class="btnContactUs" href="contact.html">Let's Talk</a></div>
-            </div>
-          </div> -->
-
-          <div class="header">
-            <div class="topnav" id="myTopnav">
-              <a href="index.html" class="logo"><img src="Schonlogo.png"></a>
+        <div class="header">
+          <div class="topnav" id="myTopnav">
+            <a href="index.html" class="logo"><img src="Schonlogo.png"></a>
               <a href="index.html" class="active menu-align home">Home</a>
               <a href="energy-maestro.html" class="menu-align">EnergyMÆSTRO</a>
-              <!-- <a href="#contact">Contact</a> -->
               <div class="dropdown">
-                <button class="dropbtn">Products 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="powerup-32.html">PowerUp 32</a>
-                  <a href="powerup60.html">PowerUp 60</a>
-                  <a href="powerup-mobile.html">PowerUp Mobile</a>
-                </div>
-              </div> 
-              <a href="company.html" class="menu-align">Company</a>
-              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-              <a class="btnContactUs" href="contact.html">Let's Talk</a>
-            </div>
-          <!-- <img class="image-27-icon" alt="" src="HomePage_Assets/Banner.png" /> -->
+              <button class="dropbtn">Products 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="powerup-32.html">PowerUp 32</a>
+                <a href="powerup60.html">PowerUp 60</a>
+                <a href="powerup-mobile.html">PowerUp Mobile</a>
+              </div>
+            </div> 
+            <a href="company.html" class="menu-align">Company</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            <a class="btnContactUs" href="contact.html">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="header-desk">
+          <div class="topnavDesk" id="myTopnavDesk">
+            <div class="main-header-logo"><a href="index.html" class="logo"><img src="Schonlogo.png" class="img-logo"></a></div>
+            <div class="main-header-menu">
+              <a href="index.html" class="active menu-align-desk home">Home</a>
+              <a href="energy-maestro.html" class="menu-align-desk">EnergyMÆSTRO</a>
+              <div class="dropdown">
+              <button class="dropbtn">Products 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="powerup-32.html">PowerUp 32</a>
+                <a href="powerup60.html">PowerUp 60</a>
+                <a href="powerup-mobile.html">PowerUp Mobile</a>
+              </div>
+            </div> 
+            <a href="company.html" class="menu-align-desk">Company</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></div>
+            <div class="main-header-btntalk"><a class="btnContactUs-desk" href="contact.html">Let's Talk</a></div>
+          </div>
+        </div>
+        <div class="banner">
 
           <div class="powering-your-journey-persona-parent">
             <h1 class="powering-your-journey">
@@ -233,7 +266,7 @@ a.btnContactUs:hover {color: #333;}
             </div>
           </div>
           <div class="banner-subtitle-wrapper">
-            <button class="clikable-button" onclick="redirectToLink()"">
+            <button class="clikable-button" onclick="redirectToLink()">
               <img
                 class="button-shape-icon"
                 alt=""
@@ -248,80 +281,17 @@ a.btnContactUs:hover {color: #333;}
             window.location.href = 'getaquote.html'; // Replace with your desired URL
           }
         </script>
-        <!-- <header class="menu-bar">
-          <div class="menu-bar-background"></div>
-          <div class="placeholder">
-            <img
-              class="screen-shot-2023-09-04-at-340"
-              loading="lazy"
-              alt="Schon Logo"
-              src="Schonlogo.png"
-              id="screenShot20230904At340"
-            />
-          </div>
-          <nav class="menu-icon-wrapper">
-            <nav class="menu">
-              <div class="menu-item">
-                <a class="home" href="index.html">Home</a>
-              </div>
-              <div class="menu-item1">
-                <a class="home1" href="energy-maestro.html">EnergyMÆSTRO</a>
-              </div>
-              <div class="menu-item2">
-                <a class="home2" id="products-menu">Products</a>
-                <div id="submenu-overlay" class="submenu">
-                    <a href="powerup-32.html" class="submenu-item">PowerUp 32</a>
-                    <a href="powerup60.html" class="submenu-item">PowerUp 60</a>
-                    <a href="powerup-mobile.html" class="submenu-item">PowerUp Mobile</a>
-                </div>
-              </div>
-              <div class="menu-item3">
-                <a class="home3" href="company.html">Company</a>
-              </div>
-            </nav>
-          </nav>
-          <div class="letstalk-button">
-            <a href="contact.html">
-            <img
-              class="lets-talk-button-shape"
-              loading="lazy"
-                  alt="Let’s talk"
-                  src="Rectangle.png"
-            />
-             <span class="lets-talk">Let’s talk</span>
-          </a>
-        </header> -->
+
 
         <script>
             function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-
-          document.addEventListener('DOMContentLoaded', function() {
-          const productsMenu = document.getElementById('products-menu');
-          const submenuOverlay = document.getElementById('submenu-overlay');
-      
-          productsMenu.addEventListener('mouseover', function() {
-            submenuOverlay.style.display = 'block';
-          });
-      
-          productsMenu.addEventListener('mouseout', function() {
-            submenuOverlay.style.display = 'none';
-          });
-      
-          submenuOverlay.addEventListener('mouseover', function() {
-            submenuOverlay.style.display = 'block';
-          });
-      
-          submenuOverlay.addEventListener('mouseout', function() {
-            submenuOverlay.style.display = 'none';
-          });
-        });
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
         </script>
       </section>
       <section class="product">
@@ -439,13 +409,7 @@ a.btnContactUs:hover {color: #333;}
               </div>
             </div>
             <div class="vector-parent">
-              <img class="vector-icon" alt="" src="HomePage_Assets/EnergyMaestro.png" />
-
-            
-
-          
-              
-                 
+              <img class="vector-icon" alt="" src="HomePage_Assets/EnergyMaestro.png" />  
               </div>
             </div>
           </div>
@@ -663,104 +627,6 @@ a.btnContactUs:hover {color: #333;}
       </section>
       </section>
     </div>
-
-      
-      <!-- <footer class="footer">
-        <div class="footer-background"></div>
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="index.html">
-              <div class="home4">Home</div>
-            </a>
-            <a href="">
-              <div class="footer-link-titles">
-                <div class="faqs">FAQs</div>
-              </div>
-            </a>
-            <a href="company.html">
-              <div class="footer-link-titles1">
-                <div class="company">Company</div>
-              </div>
-            </a>
-            <a href="contact.html">
-              <div class="careers-wrapper">
-                <div class="careers">Contact Us</div>
-              </div>
-            </a>
-          </div>
-          <div class="product-links">
-            <div class="products">Products</div>
-            <a href="powerup-32.html">
-              <div class="powerup-323">PowerUp 32</div>
-            </a>
-            <a href="">
-              <div class="powerup-22">PowerUp 22</div>
-            </a>
-            <a href="powerup60.html">
-              <div class="powerup-60">PowerUp 60</div>
-            </a>
-            <a href="powerup-mobile.html">
-              <div class="powerup-mobile1">PowerUp Mobile</div>
-            </a>
-            <a href="energy-maestro.html">
-              <div class="energymaestro1">EnergyMaestro</div>
-            </a>
-          </div>
-          <div class="industry-links">
-            <div class="industries1">Industries</div>
-            <div class="auto-dealership-wrapper">
-              <div class="auto-dealership">Auto dealership</div>
-            </div>
-            <div class="automakers-wrapper">
-              <div class="automakers1">Automakers</div>
-            </div>
-            <div class="industry-links1">
-              <div class="hospitality-sector">Hospitality sector</div>
-            </div>
-            <div class="industry-links2">
-              <div class="apartments">Apartments</div>
-            </div>
-            <div class="industry-links3">
-              <div class="parking-operators1">Parking operators</div>
-            </div>
-            <div class="retail1">Retail</div>
-            <div class="workplace">Workplace</div>
-          </div>
-        </div>
-        <div class="availability">
-          <div class="contact-container">
-            <div class="talk-to-our-container">
-              <p class="talk-to-our">Talk to our agent to meet</p>
-              <p class="your-customers-needs">your customers needs today</p>
-            </div>
-            <div class="availability1">
-              <div class="mon-fri-800am-500pm-et-container">
-                <p class="mon-fri">Mon-Fri</p>
-                <p class="am-500pm-et">8:00am-5:00pm (ET)</p>
-              </div>
-            </div>
-            <div class="logo-container">
-              <div class="email-connectschonmobilityc-parent">
-                <div class="email-connectschonmobilityc">
-                  Email: sales@schonmobility.com
-                </div>
-                <div class="industry-links4">
-                  <div class="logo">
-                    <a href="file:///C:/Users/abcxyz/Downloads/WebsiteSchon9_26%20(2)/WebsiteSchon9_26/WebsiteSchon9_26/index.html">
-                      <img
-                      class="vector-icon1"
-                      alt=""
-                      src="AddressBar_Logo.png"
-                    />
-                  </a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer> -->
    
       <div class="main-body-footer">
         <div class="row">

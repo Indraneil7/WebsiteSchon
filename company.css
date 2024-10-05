@@ -226,6 +226,7 @@
 
 .submenu-item:hover {
   background-color: #f1f1f1;
+  border-bottom: 1px solid #28b83f;
 }
 
 .footer5 a:-webkit-any-link {
@@ -856,7 +857,9 @@
 
 .company-tablink {
   color: #2AB83D;
+  border-bottom: 2px solid #2AB83D;
   margin: 0;
+  padding-bottom: 5px;
   position: relative;
   font-size: inherit;
   letter-spacing: 0.05em;
@@ -865,3 +868,42 @@
 }
 
 
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+
+.content-container {padding: 0;gap: 30px;}
+.company-tablink,.our-mission,.why-us{letter-spacing: 0}
+.component-1{width: 100%;padding: 0;gap: 10px;}
+.to-make-green{padding-left: 0;}
+.mission-statement{ flex-direction: column-reverse; gap: 10px;}
+.image_vision img{max-width: 100%;}
+.icon2{height: unset;}
+.footer5{display: block;padding: 20px 30px;}
+.footer-content5{width: 100%; min-width: unset;display: block;font-size: 22px;}
+.elevate-your-eco-journey-with-parent{gap: 25px;}
+.message-content{font-size : 17px;}
+.footer-links7,.products-link,.products5,.powerup-225,.powerup-329,.powerup-606,.powerup-mobile7,.industry-names,.industries-link,.workplace5,.home29{width: 100%;padding: 0;}
+.home29{text-align: unset;}
+.footer-link-titles2,.footer-link-titles3,.footer-link-titles4{padding: 0;width: 100%;}
+.footer-links7,.products-link {
+  margin-bottom: 17px;
+}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+
+  .content-container,.to-make-green {padding: 0;gap: 20px;}
+  .mission-statement,.footer-content5 {gap: 20px;}
+  .products-link{padding: 0;}
+  .footer-content5{min-width: unset;}
+  .image_vision img {max-width: 100%;}
+  .footer5 {padding: 50px 20px;}
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .content-container,.to-make-green {padding: 0;gap: 20px;}
+  .mission-statement {gap: 20px;}
+  .footer-content5{gap: 50px;}
+  .products-link{padding: 0;}
+  .footer-content5{min-width: unset;}
+  .image_vision img {max-width: 100%;}
+  .footer5 {padding: 50px 20px;}
+}

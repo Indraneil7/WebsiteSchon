@@ -11,7 +11,7 @@
   position: absolute;
   margin: 0 !important;
   right: 0;
-  top: 510px;
+  top: 755px;
   z-index: 0;
 }
 
@@ -166,15 +166,15 @@
   /* padding-bottom: 269px; */
 }
 
-.banner-subtitle-wrapper {
+/* .banner-subtitle-wrapper {
   padding-bottom: 269px;
-}
+} */
 
 .banner {
   /* margin-top: -26px;
   margin-right: -124px; */
   width: 100%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
   overflow: hidden;
   flex-direction: column;
   align-items: center;
@@ -185,11 +185,12 @@
   max-width: 121%;
   flex-shrink: 0;
   z-index: 3;
-  background-image: url('HomePage_Assets/Banner.png');
+  /* background-image: url('HomePage_Assets/Banner.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: -8px;
+  background-size: cover; */
+  /* margin-left: -8px; */
   /* margin: auto; */
+  /* padding-top: 15px; */
 }
 
 .menu-bar-background {
@@ -2391,7 +2392,7 @@ body {
   .auto-dealerships-category-parent, .real-estate-content-wrapper{height: unset !important;flex-direction: column; }
   .frame-parent{    flex-direction: column; align-items: center; flex: unset;}
   .industry-list{padding: 20px 20px; justify-content: center;}
-  .banner{padding: 30px 0px;box-shadow: unset !important; position: relative;}
+  .banner{padding: 30px 0px;box-shadow: unset !important; position: relative; padding-bottom: 130px;}
   .conversation-title{padding: 0;}
   .conversation-title h2{font-size: 29px;}
   .form-container{padding: 15px 20px 10px 20px;}

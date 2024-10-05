@@ -66,6 +66,7 @@ body {
 
 .submenu-item:hover {
   background-color: #f1f1f1;
+  border-bottom: 1px solid #28b83f;
 }
 
 .menu-item10:hover {
@@ -2235,3 +2236,59 @@ body {
   color: var(--color-forestgreen-100);
 }
 
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+
+  .powerup32{padding: 0 !important;}
+  .places-container,.link-columns1,.link-columns2{padding: 0;}
+  .powerup32 {display: block;}
+  .home14{text-align: unset;}
+  .image-top-icon{max-width: 100%;}
+  .image-32{height:unset; width:unset;}
+  .power-up-description{min-width: unset;padding-top: 100%;}
+  .footer2{margin-top: 20px;padding: 20px;display: block;}
+  .footer-content2{display: block;line-height: 1.2;}
+  .footer-links2,.home14,.link-columns,.apartments-wrapper,.retail3, .workplace2{width: 100%;padding: 0;}
+  .product-links1{padding: 0;width: 100%;}
+  .powerup-222, .powerup-326,.powerup-602,.products2,.powerup-mobile3,.energymaestro4,.auto-dealership-container,.industries3,.industry-links5,.automakers-container,.apartments2{width: 100%;}
+  .products2,.industries3{font-size: 20px;}
+  .product-links1,.footer-links2 {margin-bottom: 10px;}
+  .elevate-your-eco-journey-with-parent{padding: 0px 10px;}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .powerup32{padding: 20px;gap: 20px;width: 100%;}
+  .image-top-icon{max-width: 100%;}
+  .power-up-description {width: 50%;min-width: unset;}
+  .elevate-your-eco-journey-with-parent{gap: 20px;}
+  .image-32{height: unset; width: 50%;}
+  .footer2{padding: 30px 20px;}
+  .footer-content2{gap: 20px;min-width: unset;}
+  .places-items{justify-content: unset;}
+  .product-links1{width: unset;padding: 0;}
+  .places-container {padding: 0;}
+  .power-up-title{padding: 0;}
+  h3.discover-our-powerup {padding: 10px;}
+  .power-up-description{ width: 50%;min-width: unset !important;}
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1239px) {
+  .powerup32{padding: 20px;gap: 20px;width: 100%;}
+  .image-top-icon{max-width: 100%;}
+  .power-up-description {width: 50%;min-width: unset;}
+  .elevate-your-eco-journey-with-parent{gap: 20px;}
+  .image-32{height: unset; width: 50%;}
+  .footer2{padding: 30px 20px;}
+  .places-items{justify-content: unset;}
+  .product-links1{width: unset;padding: 0;}
+  .places-container {padding: 0;}
+  .power-up-title{padding: 0;}
+  h3.discover-our-powerup {padding: 10px;}
+
+
+}
+
+@media screen and (min-device-width: 1440px){
+
+
+
+}

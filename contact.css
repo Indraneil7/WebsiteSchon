@@ -136,6 +136,7 @@
 
 .submenu-item:hover {
   background-color: #f1f1f1;
+  border-bottom: 1px solid #28b83f;
 }
 
 .screen-shot-2023-09-04-at-340-container {
@@ -1485,3 +1486,49 @@ div#formMessage {
     box-sizing: border-box;
   }
 } */
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+
+
+.contact-form {flex-direction: column-reverse; }
+.contact-info3 img {max-width: 100%;}
+.contact-info-wrapper{min-width: unset;}
+.group-div{width: 100%;padding: 30px 20px;}
+.footer8{display: block;        padding: 30px 20px;}
+.footer-content8{display: block;}
+.footer-navigation1,.home45,.contact-form{width: 100%;}
+.home45{text-align: unset;}
+.contact-form-wrapper{padding: 20px;}
+.group-div{min-width: unset;}
+.navigation-links,.navigation-links1,.navigation-links2{width: 100%;padding: 0;}
+form#contactForm,input#businessName,.first-name-rect,.phone-rect,.email-field,.email-rect{width: 100% !important;}
+.submit1{color: #000;}
+.rectangle-icon7{top: 335.4px;}
+.footer-content8{min-width: unset;}
+.products11,.industries12{width: 100%; font-size: 20px;}
+.product-links2,.industries-links1{width: 100%;padding: 0;}
+.footer-navigation1,.product-links2{margin-bottom: 20px;}
+.industries-items,.industries-items1,.industries-items3,.retail10,.workplace9{width: 100%;}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .footer8{padding: 20px 30px;}
+  .footer-content8{gap: 20px;min-width: unset;}
+  .product-links2{width: 100%;padding: 0;}
+  .business-name-rect,.first-name-rect,.phone-rect,.email-rect,.email-field,.contact-form{width: 100% !important;}
+  .group-div {padding: 30px 20px;width: 100%;min-width: unset;}
+  .contact-info-wrapper{min-width: unset;}
+  .contact-info3 img{max-width: 100%;}
+  .contact-form{justify-content:unset;width: 100%;}
+  form#contactForm ,.contact-info-wrapper{width: 50%;}
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+
+  .footer8{padding: 20px 30px;}
+  .footer-content8{gap: 30px;min-width: unset;}
+  .product-links2{padding: 0;}
+
+}

@@ -66,6 +66,7 @@ body {
 
 .submenu-item:hover {
   background-color: #f1f1f1;
+  border-bottom: 1px solid #28b83f;
 }
 
 .menu-item10:hover {
@@ -2247,4 +2248,69 @@ body {
   text-align: center;
   font-size: var(--font-size-5xl);
   color: var(--color-forestgreen-100);
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .powerup32{flex-wrap: wrap; padding: 0px 20px;}
+  .power-up-description{width: 100%;min-width: unset;padding: 0;gap: 25px;}
+  .places-container{width: 100%;padding: 0;}
+  .footer2{display: block;padding: 20px 30px;}
+  .footer-content2{width: 100%; min-width: unset;display: block;font-size: 22px;}
+  .elevate-your-eco-journey-with-parent{gap: 25px;}
+  .footer-links2,.product-links1{margin-bottom: 20px;}
+  .footer-links2,.product-links1,.industry-links5,.workplace2,.retail3{width: 100%;}
+  .product-links1,.download-button,.auth-details,.display-details,.interface-property-wrapper{padding: 0;}
+  .message-content{font-size : 17px;}
+  .link-columns,.link-columns1,.link-columns2{width: 100%; padding: 0;}
+  .hotels,.powerup-326,.home14,.powerup-222,.powerup-602,.powerup-mobile3{width: 100%;}
+  .home14{text-align: unset;}
+  .frame-parent2{left: 0;}
+  .datasheet32{padding: 0px 20px;margin-top: 30px;}
+  .specifications{flex-wrap: wrap;}
+  .datasheet32{        padding-bottom: 25px;}
+  .power-parent{gap: 12%;}
+  .current-details-wrapper,.voltage-details {padding: 0;}
+  .charging-ports-value,.operating-temp-value,.i-p-protection-details,.specification-parameters,.dimensions-property,.mount-values,.power-parent,.frame-parent2,.interface-property,.display-values,.auth-values{gap: unset;}
+  .general-parent,.electric-parent{min-width: unset;}
+
+
+}
+
+@media screen and (min-device-width: 425px) and (max-device-width: 767px) {
+  .specifications {
+    margin-bottom: 35px;
+}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .electric{    padding: 19px 14px 135px 5px;}
+  .electric-child {min-height: 395px !important;}
+  .frame-parent2{left: 0;}
+    .specifications{flex-wrap: unset !important;}
+    section.datasheet32 {padding: 10px 20px;}
+    footer.footer2 {padding: 40px 25px;margin-top: 20px;}
+    .footer-content2{min-width: unset;gap: 22px;}
+    .powerup32{padding: 20px;gap: 20px;}
+    .image-32{min-width: unset;}
+    .power-up-description{min-width:unset;width: 50%;}
+    .places-container{padding: 0;}
+    .frame-parent2,.auth-values,.interface-property{gap: 0;}
+    .connectivity-child{min-height: 375px !important;}
+  }
+
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .powerup32{gap: 20px;padding: 0px 20px;}
+  .places-container{width: 100%;}
+  section.datasheet32 {padding: 0px 20px;}
+  footer.footer2 {padding: 40px 30px;}
+  .electric-child{min-height: 335px;}
+  .connectivity-child{min-height: 330px;top: 32px;}
+  .download-button{margin-bottom: 20px;}
+  .frame-parent2{gap: 0 !important; }
+}
+@media screen and (min-device-width: 1440px)  {
+  .connectivity {margin-top: 6px;}
+  .electric-child,.connectivity-child{min-height: 333px;}
+  .frame-parent2{gap: 0;}
+
 }
