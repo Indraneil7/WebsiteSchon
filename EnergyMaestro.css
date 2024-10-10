@@ -1,21 +1,15 @@
 body {
     margin: 0px;
-    font-family: "Josefin-Sans-Regular";
+    font-family: "Josefin-Sans";
 }
 
-.main-body {
-    padding: 30px;
-}
-
-.company-header {
-    background: #333;
-}
 
 .header {
     position: relative; /* This makes the header's positioning relative to its normal position */
     z-index: 10; /* Higher value to make sure it appears above the banner */
     width: 90%;
     margin: auto;
+    margin-top: 15px;
 }
 
 @media screen and (min-device-width: 1440px) {
@@ -30,80 +24,177 @@ body {
         z-index: 10;
         width: 75%;
         margin: auto;
+        margin-top: 15px;
     }
 }
 
-.company-title {
+.energy-maestro-header {
+    background-color: #333;
+}
+
+.energy-title {
     color: #00ff74;
     text-align: center;
-    padding: 0px 0px 10px;
 }
 
-.company-title h2 {
-    margin: 10px 0px 0px;
-}
-
-.company-tab-three {
+.energy-maestro-header {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.company-tab-one h4 {
-    cursor: pointer; /* Makes it clear that the tab is clickable */
-}
-
-.company-tab-ourvision-content{
+.empowering-title {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-around;
 }
 
-.company-tab-whyus-image, .company-tab-ourmission-image, .company-tab-ourvision-image {
+.empowering-section, .ev-structure-section, .energy-cost-section, .integrated-crm-section, .app-integration-section {
+    padding: 30px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+h1.energy-page-title {
+    color: #28b83f;
+    font-size: 32px;
+}
+
+h1.energy-page-title-center {
+    color: #28b83f;
     text-align: center;
+    font-size: 28px;
 }
 
-.company-tab-ourvision-content p {
-    letter-spacing: 1.2px;
-    margin: 0;
-    font-size: 20px;
-    text-align: justify;
+.ev-management-part, .energy-cost-part, .integrated-crm-part, .energy-integration-part {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
 }
 
-.company-tab-one h4 {
+p.content-align {
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h1.title {
+    margin: 50px 0px;
+}
+
+.empower-content {
+    padding: 50px 70px;
+    width: 40%;
+    align-content: center;
+}
+
+.ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #c1c1c140;
+    border-radius: 20px;
+    padding: 30px 70px;
+    width: 40%;
+}
+
+.energy-maestro-page-title {
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #333;
+}
+
+button.clikable-button-energy-page {
+    color: #fff;
+    background: #333;
+    border: 0px;
     font-size: 20px;
-    color: #282828;
+    font-family: josefin-sans;
     font-weight: 500;
+    margin: 30px 0px;
+    border-radius: 20px;
+    padding: 10px 60px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.company-tab-ourmission-content, .company-tab-whyus-content {
-    width: 60%;
+button.clikable-button-energy-page:hover {
+    color: #23b54b;
 }
 
-.main-body-content {
-    padding: 30px;
+.btnQuote-energy-page {
+    text-align: center;
 }
 
 @media screen and (max-width: 425px) {
-    .company-tab-ourvision-content {
+    .empowering-title, .ev-management-part {
         display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-    .company-tab-ourmission-content, .company-tab-whyus-content {
-        width: auto;
-        text-align: justify;
+    h1.title {
+        font-size: 26px;
     }
-    .company-tab-ourvision-image img {
-        width: 100%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .empower-content {
+        padding: 30px 10px;
     }
-    .main-body {
-        padding: 10px;
+    .ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+        padding: 30px 20px;
+        width: 50%;
     }
-    .company-tab-one h4 {
+    .empowering-section, .ev-structure-section, .energy-cost-section, .integrated-crm-section, .app-integration-section {
+        padding: 30px 0px;
+        width: 90%;
+        margin: auto;
+    }
+    h1.energy-page-title-center, h1.energy-page-title {
+        font-size: 24px;
+    }
+    p.content-align {
         font-size: 16px;
-        font-weight: 600;
     }
+    .ev-management-part, .energy-cost-part, .integrated-crm-part, .energy-integration-part {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+        padding: 50px 70px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .empowering-title {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ev-management-part, .energy-cost-part, .integrated-crm-part, .energy-integration-part {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .empower-content {
+        padding: 0px 0px;
+        width: auto;
+        align-content: center;
+    }
+    .ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+        padding: 50px 30px;
+        width: auto;
+    }
+    h1.energy-page-title-center, h1.energy-page-title {
+        font-size: 24px;
+    }
+    img.vector-icon {
+        width: 100%;
+    }    
 }
 
 /* header css */
@@ -116,6 +207,7 @@ body {
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .topnav a {
@@ -141,6 +233,7 @@ body {
 
 .header {
     padding: 15px 5% 0px 5%;
+    background-color: #333;
 }
 
 .dropdown .dropbtn {
@@ -217,6 +310,11 @@ a.btnContactUs:hover {
         float: right;
         display: block;
     }
+
+    .topnav {
+        align-items: normal;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
@@ -256,9 +354,8 @@ a.btnContactUs:hover {
         width: 100%;
         text-align: left;
     }
-    .topnav {
-        align-items: normal;
-        flex-direction: column;
+    a.btnContactUs {
+        text-align: center !important;
     }
 }
 
@@ -365,10 +462,6 @@ a.btnContactUs:hover {
     .main-header-menu a {
         padding: 14px 10px;
     }
-
-    a.btnContactUs {
-        text-align: center !important;
-    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
@@ -419,17 +512,11 @@ a.design:hover {
     padding-right: 50px;
 }
 
-.column.quick-links {
-    background-color:#282828; 
-    color: #fff;
-}
-
 .main-body-footer {
     margin: 0px;
     font-size: 16px;
     box-sizing: border-box;
-    font-family: Josefin-Sans-Regular;
-    background-color: #282828;
+    font-family: Josefin-Sans;
     width: 95%;
     z-index: 1;
     margin: auto;
@@ -456,47 +543,35 @@ a.mail-link:hover {
     margin-bottom: 5px;
 }
 
+p.txt-align {
+    font-size: 18px;
+}
+
 .column.quick-links li,.column.products-links li,.column.industries-links {
     line-height: 1.5;
 }
 
 .FooterContant {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: left;
 }
 
 .footerlinks {
     display: flex;
-    width: 100%;    
     justify-content: space-between;
     letter-spacing: 1px;
     font-weight: 700;
+    width: 100%;
 }
 
 a.design {
     font-weight: 500;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    .column-text-align {
-        text-align: left;
-    }
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
     .footerlinks {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    form#contactForm {
-        width: 55%;
-    }
-
-    .company-tab-ourvision-content {
-        flex-direction: column-reverse;
-    }
-
-    .company-tab-ourmission-content, .company-tab-whyus-content {
-        width: auto;
+        flex-direction: column;
     }
 }
 
@@ -507,20 +582,16 @@ a.design {
 }
 
 @media only screen and (max-width: 600px) {
-    .column, .column-wide {
-        width: 100%;
-    }
-
     .column {
         float: left;
-        width: 100%;
+        /* width: 100%; */
         padding: 10px;
         height: 200px;
     }
 
     .column-wide {
         float: left;
-        width: 100%;
+        /* width: 100%; */
         padding: 10px;
         height: 250px;
     }
@@ -529,12 +600,12 @@ a.design {
 @media only screen and (max-width: 768px) {
     .column-wide {
         padding-right: 0;
+        margin: auto;
     }
 
     .footerlinks {
-        width: unset !important;
-        gap: 25px;
-        letter-spacing: 0px !important;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
 
@@ -545,10 +616,6 @@ a.design {
 }
 
 @media only screen and (max-width: 425px) {
-    .column.quick-links, .column-wide, .column.products-links, .column.industries-links {
-        padding-left:25px;
-    }
-
     .column.quick-links {
         height: 150px;
     }
@@ -566,15 +633,9 @@ a.design {
         justify-content: unset !important;
     }
 
-    .footerlinks {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
     .column-wide {
         margin-top: 15px;
         border-top: 1px solid #444;
-        width: 100% !important;
     }
 
     .column.industries-links {

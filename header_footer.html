@@ -1,4 +1,13 @@
-body{margin: 0;padding: 0;}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Header with Dropdown</title>
+
+        <style>
+            body{margin: 0;padding: 0;}
 
             /* Header css */
             .topnav {
@@ -100,7 +109,7 @@ body{margin: 0;padding: 0;}
                 margin-top: 3px;
             }
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 600px) {
                 .topnav a:not(:first-child), .dropdown .dropbtn {
                     display: none;
                 }
@@ -111,7 +120,7 @@ body{margin: 0;padding: 0;}
                 }
             }
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 600px) {
                 .topnav.responsive {
                     position: relative;
                 }
@@ -163,21 +172,6 @@ body{margin: 0;padding: 0;}
                 .topnav {
                     padding: 0px 0px 0px 10px;
                 }
-
-                .product-description-content {
-                    width: 100% !important;
-                }
-
-                .product-place {
-                    display: flex;
-                    gap: 15px;
-                    align-items: stretch;
-                    width: 100%;
-                }
-
-                .product-image {
-                    text-align: center;
-                }
             }
 
             @media only screen and (min-width: 768px) {
@@ -186,12 +180,6 @@ body{margin: 0;padding: 0;}
                     font-family: josefin sans;
                 }
             }
-
-            /* @media screen and (min-width: 768px) and (max-width: 1024px) {
-                .product {
-                    gap: 150px !important;
-                }
-            } */
 
             @media  only screen and (max-width: 425px) {
                 a.icon {
@@ -210,27 +198,6 @@ body{margin: 0;padding: 0;}
 
                 .header {
                     background-size: unset !important;
-                }
-                .product {
-                    flex-direction: column;
-                }
-                .product-description-content {
-                    width: auto !important;
-                }
-                .product-place {
-                    display: flex;
-                    gap: 15px;
-                    justify-content: center;
-                    align-items: stretch;
-                }
-                .product-place-1 {
-                    width: 100% !important;
-                }
-                .product-image img {
-                    width: 100%;
-                }
-                .product-image {
-                    width: 100% !important;
                 }
             }
 
@@ -307,6 +274,17 @@ body{margin: 0;padding: 0;}
                 letter-spacing: 1.7px;
                 padding: 25px 10px 10px 10px;
             }
+
+            footer {
+                box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.25);
+                box-sizing: border-box;
+                font-family: Josefin-Sans-Regular;
+                background-color: #282828;
+                color: #fff;
+                padding: 20px 0px;
+                width: 100%;
+                margin: auto;
+            }
         
             .row:after {
                 content: "";
@@ -344,17 +322,7 @@ body{margin: 0;padding: 0;}
             .main-body-footer {
                 margin: 0px;
                 font-size: 16px; 
-                box-sizing: border-box;
-                font-family: Josefin-Sans-Regular;
-                padding: 20px 0px;
-                width: 100%;
                 z-index: 1;
-            }
-
-            footer {
-                background: #282828;
-                box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.25);
-                color: #fff;
             }
 
             a.mail-link {
@@ -384,7 +352,7 @@ body{margin: 0;padding: 0;}
 
             .footerlinks {
                 display: flex;
-                width: 95%;    
+                /* width: 63%;     */
                 justify-content: space-between;
                 letter-spacing: 1px;
                 font-weight: 700;
@@ -423,21 +391,12 @@ body{margin: 0;padding: 0;}
             @media only screen and (max-width: 768px) {
                 .column-wide {
                     padding-right: 0;
-                    margin: auto;
                 }
 
                 .footerlinks {
                     width: unset !important;
                     gap: 25px;
                     letter-spacing: 0px !important;
-                    flex-wrap: wrap;
-                }
-                .product {
-                    display: flex;
-                    gap: 15px;
-                    width: 100%;
-                    justify-content: space-evenly;
-                    flex-direction: column;
                 }
             }
 
@@ -485,104 +444,121 @@ body{margin: 0;padding: 0;}
                 }
             }
 
-    /* Main Body Content */
-    body{
-        font-family: 'Josefin Sans'!important;
-    }
-.headerbanner{background-image: url('https://schonmobility.netlify.app/image%2027.png'); 
-    position: relative;
-    overflow: hidden;
-    min-height: 204px;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.pagename{
-    background-color: #282828;
+        </style>
+    </head>
+    <body>
+        
+        <div class="header">
+            
+            <div class="topnav" id="myTopnav">
+                
+                <div class="main-header-logo">
+                    <a href="index.html" class="logo"> <img src="Schonlogo.png"></a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+                
+                <a href="index.html" class="active menu-align home">Home</a>
+                <a href="energy-maestro.html" class="menu-align">EnergyMÆSTRO</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Products 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="powerup-32.html" class="submenu-powerup-32">PowerUp 32</a>
+                        <a href="powerup60.html" class="submenu-powerup-60">PowerUp 60</a>
+                        <a href="powerup-mobile.html" class="submenu-powerup-mobile">PowerUp Mobile</a>
+                    </div>
+                </div>
 
-}
-.pagename h1{
-    color: #23b54b;
-    margin: auto;
-    text-align: center;
-    font-size: 23px;
-    padding: 5px 0px;
-}
-.main-body-content{
-    padding: 30px;
-}
+                <a href="company.html" class="menu-align">Company</a>
+                <a class="btnContactUs" href="contact.html">Let's Talk</a>
+            </div>
 
-.product-place{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-.product-place p{font-size: 11px;margin: 0;}
-.product-place-1{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px 1px #282828;
-    width: 15%;
-    text-align: center;
-    overflow: hidden;
-}
-.product-place-1 img {
-    max-width: 40%;
-}
-.product{
-    display: flex;
-    gap: 15px;  
-    width: 100%;  
-    justify-content:space-evenly;
-}
-.product-description-content{
-    width: 50%;
-}
-/* .product-image{
-    width: 30%;
-} */
-.product-description p {
-    font-size: 20px;
-}
-.product-place-1 p{
-    font-size: 12px;
-}
+            <script>
+            
+                function toggleDropdown() {
+                    var dropdown = document.getElementById("dropdown-content");
+                    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+                }
+                
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+    
+            </script>
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .main-header-logo {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .topnav {
-        align-items: normal;
-        flex-direction: column;
-    }
-    a.btnContactUs {
-        text-align: center !important;
-    }
-}
+        </div>
 
-.header {
-    position: relative; /* This makes the header's positioning relative to its normal position */
-    z-index: 10; /* Higher value to make sure it appears above the banner */
-    width: 90%;
-    margin: auto;
-}
+        <div class="main-body-content" style="height: 150px;">
 
-@media screen and (min-device-width: 1440px) {
-    .header {
-        width: 55%;
-    }
-}
+            <h1 style="margin: auto; text-align: center;">Main Body Content</h1>
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
-    .header {
-        position: relative;
-        z-index: 10;
-        width: 75%;
-        margin: auto;
-    }
-}
+        </div>
+
+        <footer>
+            <div class="main-body-footer">
+                <div class="row">
+                    <div class="FooterContant">
+                        <div class="footerlinks">
+
+                            <div class="column quick-links">
+                                <h3 style="color: #23b54b; font-size: 18px; margin-top: 3px;">Quick Links</h3>
+                                    <li><a class="design" href="index.html">Home</a></li>
+                                    <li><a class="design" href="powerup-32.html">FAQs</a></li>
+                                    <li><a class="design" href="company.html">Company</a></li>
+                                    <li><a class="design" href="contact.html">Contact Us</a></li>
+                            </div>
+
+                            <div class="column products-links" >
+                                <h3 style="color: #23b54b; font-size: 18px; margin-top: 3px;">Products</h3>
+                                    <li><a class="design" href="powerup-32.html">PowerUp 32</a></li>
+                                    <li><a class="design" href="powerup-32.html">PowerUp 22</a></li>
+                                    <li><a class="design" href="powerup60.html">PowerUp 60</a></li>
+                                    <li><a class="design" href="powerup-mobile.html">PowerUp Mobile</a></li>
+                                    <li><a class="design" href="energy-maestro.html">EnergyMaestro</a></li>
+                            </div>
+
+                            <div class="column industries-links">
+                                <h3 style="color: #23b54b; font-size: 18px; margin: 0px 0px 15px">Industries</h3>
+                                    <li class="design"><a class="design" href="#">Auto Dealership</a></li>
+                                    <li class="design"><a class="design" href="#">Automakers</a></li>
+                                    <li class="design"><a class="design" href="#">Hospitality sector</a></li>
+                                    <li class="design"><a class="design" href="#">Apartments</a></li>
+                                    <li class="design"><a class="design" href="#">Parking operators</a></li>
+                                    <li class="design"><a class="design" href="#">Retail</a></li>
+                                    <li class="design"><a class="design" href="#">Workplace</a></li>
+                            </div>
+                        
+                            <div class="column industries-links">
+                                <h3 style="color: #23b54b; font-size: 18px; margin: 0px 0px 15px;">Industries</h3>
+                                    <li class="design"><a class="design" href="#">Auto Dealership</a></li>
+                                    <li class="design"><a class="design" href="#">Automakers</a></li>
+                                    <li class="design"><a class="design" href="#">Hospitality sector</a></li>
+                                    <li class="design"><a class="design" href="#">Apartments</a></li>
+                                    <li class="design"><a class="design" href="#">Parking operators</a></li>
+                                    <li class="design"><a class="design" href="#">Retail</a></li>
+                                    <li class="design"><a class="design" href="#">Workplace</a></li>
+                            </div>                       
+                        
+                            <div class="column column-wide">
+                                <h3 class="column-text-align">Talk to our agent to meet
+                                    <br>your customers needs today</h2>
+                                    <p class="column-text-align">Mon-Fri<br>
+                                        8:00am-5:00pm (ET)<br>
+                                        Email: <a href="mailto:sales@schonmobility.com" class="mail-link">sales@schonmobility.com</a><br>
+                                        <a href="index.html"><img style="margin-top: 8px;" src="AddressBar_Logo.png" height="80px" width="130px"></a>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

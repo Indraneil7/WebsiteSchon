@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <title>Schon</title>
+    </head>
+
+    <body>
+        <!-- header -->
+        <div class="header">
+            <div class="topnav" id="myTopnav">
+                <div class="main-header-logo">
+                    <a href="home.html" class="logo"> <img src="Schonlogo.png"></a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+                
+                <a href="home.html" class="active menu-align home">Home</a>
+                <a href="EnergyMaestro.html" class="menu-align">EnergyMÆSTRO</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">Products 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="PowerUp-32.html" class="submenu-powerup-32">PowerUp 32</a>
+                        <a href="PowerUp-60.html" class="submenu-powerup-60">PowerUp 60</a>
+                        <a href="PowerUp-Mobile.html" class="submenu-powerup-mobile">PowerUp Mobile</a>
+                    </div>
+                </div>
+                
+                <a href="Company.html" class="menu-align">Company</a>
+                <div class="btn-contact"><a class="btnContactUs" href="ContactUs.html">Let's Talk</a></div>
+            </div>
+        </div>
+        
+        <script>
+            
+            function toggleDropdown() {
+                var dropdown = document.getElementById("dropdown-content");
+                dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+            }
+            
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+        </script>
+        
+        <div class="header-banner-section">
+            <div class="banner-heading">
+                <div class="main-banner-content">
+                    <p>The Schon Way</p>
+                    <p class="content-banner-second">Making Range Anxiety Charging Inconvenience a thing of the past by Making EV Chargers Cost Effective and Smart</p>
+                </div>
+                <div class="btnQuote">
+                    <button class="clikable-button" onclick="redirectToLink()">
+                        <div class="get-a-quote">Get a Quote</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-bgnd">
+            <div class="product-section">
+                <div class="main-title">
+                    <h1>Our Products</h1>
+                </div>
+                <div class="main-product-four">
+                    <div class="product-section-content">
+                        <div class="product-section-product">
+                            <div class="product-section-product-image"><img src="https://schonmobility.netlify.app/HomePage_Assets/powerup32.png" alt=""></div>
+                            <div class="product-section-product-details"><h3><a href="">Powerup 32</a></h3></div>
+                        </div>
+                    </div>
+                    <div class="product-section-content">
+                        <div class="product-section-product">
+                            <div class="product-section-product-image"><img src="powerup22.png" alt=""></div>
+                            <div class="product-section-product-details"><h3><a href="">PowerUp 22</a></h3></div>
+                        </div>
+                    </div>
+                    <div class="product-section-content">
+                        <div class="product-section-product">
+                            <div class="product-section-product-image"><img src="https://schonmobility.netlify.app/HomePage_Assets/powerup60.png" alt=""></div>
+                            <div class="product-section-product-details"><h3><a href="">PowerUp 60</a></h3></div>
+                        </div>
+                    </div>
+                    <div class="product-section-content">
+                        <div class="product-section-product">
+                            <div class="product-section-product-image"><img src="https://schonmobility.netlify.app/HomePage_Assets/powerupmobile.png" alt=""></div>
+                            <div class="product-section-product-details"><h3><a href="">PowerUp Mobile</a></h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="energy-maestro-section">
+                <div class="main-title">
+                    <h1>EnergyMÆSTRO</h1>
+                </div>
+                <div class="network-management-part">
+                    <div class="network-part-content">
+                        <h1 class="title-energy">Our Charge Network Management Software</h1>
+                        <p>EnergyMaestro, Schön's innovative charge network management system, is the nexus of advanced EV infrastructure management and energy optimization. This platform, tailored for the evolving needs of electric vehicle support, streamlines operations, and reduces costs.</p>
+                        <p>EnergyMaestro ensures reliable, efficient, and sustainable charging solutions, positioning businesses at the forefront of the green mobility revolution</p>
+                    </div>
+                    <div class="side-image">
+                        <img class="vector-icon" alt="" src="HomePage_Assets/EnergyMaestro.png">
+                    </div>
+                </div>
+                <div class="btnQuote">
+                    <button class="clikable-button" onclick="redirectToLink()">
+                        <div class="get-a-quote">Get a Quote</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="img-bgnd-1">
+            <div class="services-section">
+                <div class="main-title">
+                    <h1>Industries we Service</h1>
+                </div>
+                <div class="service-part">
+                    <div class="service-part-one">
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/AutoDelearship_Icon.png">
+                            <h3>Auto Dealerships</h3>
+                        </div>
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/Automaker_ICON.png">
+                            <h3>AutoMakers</h3>
+                        </div>
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/hospitality_ICON.png">
+                            <h3>Hospitality</h3>
+                        </div>
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/Real_Estate_ICON.png">
+                            <h3>Real Estate</h3>
+                        </div>
+                    </div>
+                    <div class="service-part-two">
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/Parkingoperators_ICON.png">
+                            <h3>Parking Operators</h3>
+                        </div>
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/Retail_Icon.png">
+                            <h3>Retail</h3>
+                        </div>
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/Workplace_Icon.png">
+                            <h3>Workplaces</h3>
+                        </div>
+                        <div class="dealerships-content">
+                            <img class="filled-outline-icon" loading="lazy" alt="" src="HomePage_Assets/Municipalities_Icon.png">
+                            <h3>Municipalities</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnQuote">
+                    <button class="clikable-button" onclick="redirectToLink()">
+                        <div class="get-a-quote">Get a Quote</div>
+                    </button>
+                </div>
+                <script>
+                    function redirectToLink() {
+                      window.location.href = 'ContactUs.html'; // Replace with your desired URL
+                    }
+                  </script>
+            </div>
+
+            <div class="contact-form-section">
+                <div class="main-title">
+                    <h1>Like What You See? Start a Conversation with Schön</h1>
+                </div>
+                <div class="contact-form">
+                    <div class="form-container">
+                        <form id="contactForm" class="form-fields" data-gtm-form-interact-id="0">
+                            <div class="form-left-side-content">
+                                <p style="color: #c90000;" class="form-lable">Required filed with the mark <span style="color: red;">*</span></p>
+                                <div class="businesses-name">
+                                    <p class="form-lable">Business Name <span style="color: red;">*</span></p>
+                                    <input type="text" class="txtBnsNm" autocomplete="off">
+                                </div>
+                                <div class="name">
+                                    <p style="margin-bottom: 5px;" class="form-lable">Name <span style="color: red;">*</span></p>
+                                    <input type="text" class="txtNm" autocomplete="off">
+                                </div>
+                                <div class="mbl-nmbr">
+                                    <p class="form-lable">Phone <span style="color: red;">*</span></p>
+                                    <input type="text" class="txtNmbr" autocomplete="off">
+                                </div>
+                                <div class="email-id">
+                                    <p class="form-lable">Email <span style="color: red;">*</span></p>
+                                    <input type="email" class="txtEmail" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-right-side-content">
+                                <div class="message">
+                                    <p class="form-lable">Message <span style="color: red;">*</span></p>
+                                    <textarea class="message-txtarea" class="txtMsg" placeholder="Max of 500 Characters" autocomplete="off"></textarea>
+                                </div>
+                                <div class="btnsubmit">
+                                    <button type="submit" class="submit-button">
+                                        <div class="submit">Submit</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main-body-footer">
+                <div class="row">
+                    <div class="FooterContant">
+                        <div class="footerlinks">
+
+                            <div class="column quick-links">
+                                <h3 style="color: #23b54b; font-size: 18px; margin-top: 3px;">Quick Links</h3>
+                                    <li><a class="design" href="home.html">Home</a></li>
+                                    <li><a class="design" href="PowerUp-32.html">FAQs</a></li>
+                                    <li><a class="design" href="Company.html">Company</a></li>
+                                    <li><a class="design" href="ContactUs.html">Contact Us</a></li>
+                            </div>
+
+                            <div class="column products-links" >
+                                <h3 style="color: #23b54b; font-size: 18px; margin-top: 3px;">Products</h3>
+                                    <li><a class="design" href="PowerUp-32.html">PowerUp 32</a></li>
+                                    <li><a class="design" href="PowerUp-32.html">PowerUp 22</a></li>
+                                    <li><a class="design" href="PowerUp-60.html">PowerUp 60</a></li>
+                                    <li><a class="design" href="PowerUp-Mobile.html">PowerUp Mobile</a></li>
+                                    <li><a class="design" href="EnergyMaestro.html">EnergyMaestro</a></li>
+                            </div>
+
+                            <div class="column industries-links">
+                                <h3 style="color: #23b54b; font-size: 18px; margin: 0px 0px 15px">Industries</h3>
+                                    <li class="design"><a class="design" href="#">Auto Dealership</a></li>
+                                    <li class="design"><a class="design" href="#">Automakers</a></li>
+                                    <li class="design"><a class="design" href="#">Hospitality sector</a></li>
+                                    <li class="design"><a class="design" href="#">Apartments</a></li>
+                                    <li class="design"><a class="design" href="#">Parking operators</a></li>
+                                    <li class="design"><a class="design" href="#">Retail</a></li>
+                                    <li class="design"><a class="design" href="#">Workplace</a></li>
+                            </div>
+
+                            <div class="column-wide column">
+                                <h3 class="column-text-align">Talk to our agent to meet
+                                    <br>your customers needs today</h2>
+                                    <p class="column-text-align">Mon-Fri<br>
+                                        8:00am-5:00pm (ET)<br>
+                                        Email: <a href="mailto:sales@schonmobility.com" class="mail-link">sales@schonmobility.com</a><br>
+                                        <a href="home.html"><img style="margin-top: 8px;" src="AddressBar_Logo.png" height="80px" width="130px"></a>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="PowerUp-Mobile.css">
-        <title>Power Up Mobile</title>
+        <link rel="stylesheet" href="ContactUs.css">
+        <title>Contact Us</title>
     </head>
+
     <body>
-        <div class="headerbanner">
-      
+        <div class="contact-us-header">
             <div class="header">
-                
                 <div class="topnav" id="myTopnav">
-                    
                     <div class="main-header-logo">
                         <a href="home.html" class="logo"> <img src="Schonlogo.png"></a>
                         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -32,18 +30,16 @@
                             <a href="PowerUp-Mobile.html" class="submenu-powerup-mobile">PowerUp Mobile</a>
                         </div>
                     </div>
-
+    
                     <a href="Company.html" class="menu-align">Company</a>
                     <a class="btnContactUs" href="ContactUs.html">Let's Talk</a>
                 </div>
-
                 <script>
                 
                     function toggleDropdown() {
                         var dropdown = document.getElementById("dropdown-content");
                         dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
                     }
-                    
                     function myFunction() {
                         var x = document.getElementById("myTopnav");
                         if (x.className === "topnav") {
@@ -54,36 +50,48 @@
                     }
         
                 </script>
-
-            </div>
-        </div>  
-        <div class="pagename">
-            <h1>Discover Our PowerUp Mobile</h1>
-        </div>  
-
-        <div class="main-body-content">
-            <div class="product">
-                <div class="product-image"><img src="https://schonmobility.netlify.app/Powerupmobile_Assets/ChargerImage_Mobile.png" alt=""></div>
-                <div class="product-description-content">
-                   <div class="product-description">
-                        <p>Introducing PowerUp Mobile: your ultimate solution for emergency EV charging and network expansion. This portable DC fast charger delivers quick, on-the-go energy boosts, ensuring you're never left stranded. Ideal for temporary setups, roadside assistance, and filling charging gaps, PowerUp Mobile is the agile, efficient answer to keeping the journey going. Wherever there's a need for a swift charge, PowerUp Mobile steps in to power up your adventure, seamlessly blending flexibility with reliability. Best suited for</p>
-                        <div>
-                            <div class="product-place">
-                                <div class="product-place-1">
-                                    <img src="https://schonmobility.netlify.app/Powerupmobile_Assets/Enroute_Icon.png" alt="">
-                                    <p>ENROUTE</p>
-                                </div>
-                                <div class="product-place-1">
-                                    <img src="https://schonmobility.netlify.app/Powerupmobile_Assets/Openactivities_Icon.png" alt="">
-                                    <p>EVENTS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact-title">
+                    <h2>Let's Talk</h2>
                 </div>
             </div>
         </div>
-
+        <div class="main-body">
+            <div class="form-section">
+                <form id="contactForm" class="form-fields" data-gtm-form-interact-id="0">
+                    <div class="form-content">
+                        <p style="color: #c90000;" class="form-lable">Required filed with the mark <span style="color: red;">*</span></p>
+                        <div class="businesses-name">
+                            <p class="form-lable">Business Name <span style="color: red;">*</span></p>
+                            <input type="text" class="txtBnsNm" autocomplete="off">
+                        </div>
+                        <div class="name">
+                            <p style="margin-bottom: 5px;" class="form-lable">Name <span style="color: red;">*</span></p>
+                            <input type="text" class="txtNm" autocomplete="off">
+                        </div>
+                        <div class="mbl-nmbr">
+                            <p class="form-lable">Phone <span style="color: red;">*</span></p>
+                            <input type="text" class="txtNmbr" autocomplete="off">
+                        </div>
+                        <div class="email-id">
+                            <p class="form-lable">Email <span style="color: red;">*</span></p>
+                            <input type="email" class="txtEmail" autocomplete="off">
+                        </div>
+                        <div class="message">
+                            <p class="form-lable">Message <span style="color: red;">*</span></p>
+                            <textarea class="message-txtarea" class="txtMsg" placeholder="Max of 500 Characters" autocomplete="off"></textarea>
+                            <div class="btnsubmit">
+                                <button type="submit" class="submit-button">
+                                    <div class="submit">Submit</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-details">
+                <img src="ContactUS.png" class="contact-img-info">
+            </div>
+        </div>
         <footer>
             <div class="main-body-footer">
                 <div class="row">
@@ -118,7 +126,7 @@
                                     <li class="design"><a class="design" href="#">Workplace</a></li>
                             </div>
 
-                            <div class="column-wide column">
+                            <div class="column column-wide">
                                 <h3 class="column-text-align">Talk to our agent to meet
                                     <br>your customers needs today</h2>
                                     <p class="column-text-align">Mon-Fri<br>

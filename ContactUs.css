@@ -3,11 +3,17 @@ body {
     font-family: "Josefin-Sans-Regular";
 }
 
-.main-body {
-    padding: 30px;
+.contact-title {
+    color: #00ff74;
+    text-align: center;
+    padding: 0px 0px 10px;
 }
 
-.company-header {
+.contact-title h2 {
+    margin: 10px 0px 0px;
+}
+
+.contact-us-header {
     background: #333;
 }
 
@@ -33,76 +39,133 @@ body {
     }
 }
 
-.company-title {
-    color: #00ff74;
-    text-align: center;
-    padding: 0px 0px 10px;
+/* form css */
+
+form#contactForm {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    padding: 30px 50px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.company-title h2 {
-    margin: 10px 0px 0px;
+.form-section {
+    width: 40%;
 }
 
-.company-tab-three {
+input.txtBnsNm, input.txtNm, input.txtNmbr, input.txtEmail {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #7e747452;
+    border-radius: 5px;
+}
+
+textarea.message-txtarea {
+    height: 90px;
+    width: 100%;
+    border: 1px solid #7e747452;
+    border-radius: 5px;
+}
+
+.btnsubmit {
+    width: 100%;
+    text-align: end;
+}
+
+.form-lable {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button.submit-button {
+    border-radius: 25px;
+    padding: 10px 50px;
+    border: 0px;
+    height: 40px;
+    margin-top: 20px;
+    background-image: url(HomePage_Assets/Rectangle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: josifen sans;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button.submit-button:hover {
+    color: #333;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.required-filed {
+    color: #c90000;
+}
+
+
+/* main body css */
+.main-body {
     display: flex;
-    gap: 40px;
+    align-items: stretch;
     justify-content: center;
+    margin: 50px 0px;
 }
 
-.company-tab-one h4 {
-    cursor: pointer; /* Makes it clear that the tab is clickable */
-}
-
-.company-tab-ourvision-content{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.company-tab-whyus-image, .company-tab-ourmission-image, .company-tab-ourvision-image {
-    text-align: center;
-}
-
-.company-tab-ourvision-content p {
-    letter-spacing: 1.2px;
-    margin: 0;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.company-tab-one h4 {
-    font-size: 20px;
-    color: #282828;
-    font-weight: 500;
-}
-
-.company-tab-ourmission-content, .company-tab-whyus-content {
-    width: 60%;
-}
-
-.main-body-content {
-    padding: 30px;
-}
-
-@media screen and (max-width: 425px) {
-    .company-tab-ourvision-content {
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    form#contactForm {
+        width: 80%;
     }
-    .company-tab-ourmission-content, .company-tab-whyus-content {
-        width: auto;
-        text-align: justify;
-    }
-    .company-tab-ourvision-image img {
-        width: 100%;
+    .form-section {
+        width: 50%;
     }
     .main-body {
-        padding: 10px;
+        margin: 50px;
+        flex-wrap: wrap;
     }
-    .company-tab-one h4 {
-        font-size: 16px;
-        font-weight: 600;
+}
+ 
+@media screen and (max-width: 768px) and (min-width: 426px){
+    .main-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px;
+        flex-direction: column;
+    }
+    .form-section {
+        width: 100%;
+    }
+    .contact-details {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    form#contactForm{
+        padding: 30px;
+        width: 75%;
+        margin: auto;
+    }
+    .main-body{
+        display: block;
+        margin: unset;
+    }
+    .form-section{
+        width: 100%;
+    }
+    .contact-details img{
+        max-width: 100%;
+    }
+    .contact-details {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -219,15 +282,6 @@ a.btnContactUs:hover {
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .main-header-logo {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .topnav.responsive {
         position: relative;
@@ -256,9 +310,18 @@ a.btnContactUs:hover {
         width: 100%;
         text-align: left;
     }
-    .topnav {
-        align-items: normal;
-        flex-direction: column;
+
+    a.btnContactUs {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .main-header-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -365,10 +428,6 @@ a.btnContactUs:hover {
     .main-header-menu a {
         padding: 14px 10px;
     }
-
-    a.btnContactUs {
-        text-align: center !important;
-    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
@@ -429,7 +488,7 @@ a.design:hover {
     font-size: 16px;
     box-sizing: border-box;
     font-family: Josefin-Sans-Regular;
-    background-color: #282828;
+    padding: 20px 0px;
     width: 95%;
     z-index: 1;
     margin: auto;
@@ -462,42 +521,24 @@ a.mail-link:hover {
 
 .FooterContant {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: left;
 }
 
 .footerlinks {
-    display: flex;
-    width: 100%;    
+    display: flex; 
     justify-content: space-between;
     letter-spacing: 1px;
     font-weight: 700;
+    width: 100%;
 }
 
 a.design {
     font-weight: 500;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    .column-text-align {
-        text-align: left;
-    }
-
-    .footerlinks {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    form#contactForm {
-        width: 55%;
-    }
-
-    .company-tab-ourvision-content {
-        flex-direction: column-reverse;
-    }
-
-    .company-tab-ourmission-content, .company-tab-whyus-content {
-        width: auto;
-    }
+img.contact-img-info {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -506,7 +547,16 @@ a.design {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    .column-wide {
+        padding-right: 0;
+        margin: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
     .column, .column-wide {
         width: 100%;
     }
@@ -535,6 +585,13 @@ a.design {
         width: unset !important;
         gap: 25px;
         letter-spacing: 0px !important;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .topnav {
+        align-items: normal;
+        flex-direction: column;
     }
 }
 
