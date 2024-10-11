@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: "Josefin-Sans-Regular";
+    font-family: "Josefin Sans";
 }
 .header-banner-section {
     background-image: url(HomePage_Assets/Banner.png);
@@ -811,7 +811,7 @@ h3.column-text-align {
     margin: 0px;
     font-size: 16px;
     box-sizing: border-box;
-    font-family: Josefin-Sans-Regular;
+    font-family: Josefin Sans;
     background-color:#282828; 
     width: 95%;
     z-index: 1;

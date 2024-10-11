@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: "Josefin-Sans-Regular";
+    font-family: "Josefin Sans";
 }
 
 .main-body {
@@ -12,8 +12,10 @@ body {
 }
 
 .header {
-    position: relative; /* This makes the header's positioning relative to its normal position */
-    z-index: 10; /* Higher value to make sure it appears above the banner */
+    position: relative;
+    /* This makes the header's positioning relative to its normal position */
+    z-index: 10;
+    /* Higher value to make sure it appears above the banner */
     width: 90%;
     margin: auto;
 }
@@ -50,16 +52,19 @@ body {
 }
 
 .company-tab-one h4 {
-    cursor: pointer; /* Makes it clear that the tab is clickable */
+    cursor: pointer;
+    /* Makes it clear that the tab is clickable */
 }
 
-.company-tab-ourvision-content{
+.company-tab-ourvision-content {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.company-tab-whyus-image, .company-tab-ourmission-image, .company-tab-ourvision-image {
+.company-tab-whyus-image,
+.company-tab-ourmission-image,
+.company-tab-ourvision-image {
     text-align: center;
 }
 
@@ -76,7 +81,8 @@ body {
     font-weight: 500;
 }
 
-.company-tab-ourmission-content, .company-tab-whyus-content {
+.company-tab-ourmission-content,
+.company-tab-whyus-content {
     width: 60%;
 }
 
@@ -90,16 +96,21 @@ body {
         justify-content: center;
         flex-direction: column-reverse;
     }
-    .company-tab-ourmission-content, .company-tab-whyus-content {
+
+    .company-tab-ourmission-content,
+    .company-tab-whyus-content {
         width: auto;
         text-align: justify;
     }
+
     .company-tab-ourvision-image img {
         width: 100%;
     }
+
     .main-body {
         padding: 10px;
     }
+
     .company-tab-one h4 {
         font-size: 16px;
         font-weight: 600;
@@ -144,7 +155,7 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 20px;    
+    font-size: 20px;
     border: none;
     outline: none;
     color: #333;
@@ -165,14 +176,15 @@ body {
 
 .dropdown-content a {
     float: none;
-    color: black;  
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover,
+.dropdown:hover .dropbtn {
     color: #28b83f;
 }
 
@@ -209,7 +221,9 @@ a.btnContactUs:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
         display: none;
     }
 
@@ -233,7 +247,7 @@ a.btnContactUs:hover {
         position: relative;
     }
 
-    .topnav.responsive a {        
+    .topnav.responsive a {
         font-size: 16px;
         font-weight: 600;
         float: none;
@@ -256,13 +270,14 @@ a.btnContactUs:hover {
         width: 100%;
         text-align: left;
     }
+
     .topnav {
         align-items: normal;
         flex-direction: column;
     }
 }
 
-@media only screen and (min-width: 426px ) and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     .topnav a {
         font-size: 16px;
     }
@@ -272,7 +287,7 @@ a.btnContactUs:hover {
     }
 }
 
-@media  only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .header {
         padding: 15px 3% 0px 3% !important;
     }
@@ -293,7 +308,7 @@ a.btnContactUs:hover {
     }
 }
 
-@media  only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     a.icon {
         margin-top: 3px;
     }
@@ -320,41 +335,41 @@ a.btnContactUs:hover {
 
 .dropbtn {
     background-color: #fff;
-    color: #000; 
-    padding: 14px 16px; 
-    font-size: 20px; 
-    border: none; 
-    cursor: pointer; 
+    color: #000;
+    padding: 14px 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown-content {
-    display: none; 
-    position: absolute; 
-    background-color: white; 
-    min-width: 180px; 
-    z-index: 1; 
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    z-index: 1;
 }
 
 .dropdown-content a {
-    color: black; 
-    padding: 12px 16px; 
+    color: black;
+    padding: 12px 16px;
     text-align: left;
-    text-decoration: none; 
+    text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
     color: #28b83f;
-    border-bottom: 1px solid #28b83f; 
+    border-bottom: 1px solid #28b83f;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; 
+    display: block;
 }
 
 .main-header-btntalk {
-    float: right; 
+    float: right;
 }
 
 @media only screen and (max-width: 768px) {
@@ -386,7 +401,7 @@ a.btnContactUs:hover {
 }
 
 .column-wide {
-    float: left;            
+    float: left;
     letter-spacing: 1.7px;
     padding: 25px 10px 10px 10px;
 }
@@ -398,7 +413,7 @@ a.btnContactUs:hover {
 }
 
 li {
-    list-style:none;
+    list-style: none;
     padding-left: 3px;
     font-size: 18px;
 }
@@ -414,13 +429,13 @@ a.design:hover {
 }
 
 .column-wide {
-    background-color:#282828; 
-    color: #fff; 
+    background-color: #282828;
+    color: #fff;
     padding-right: 50px;
 }
 
 .column.quick-links {
-    background-color:#282828; 
+    background-color: #282828;
     color: #fff;
 }
 
@@ -428,7 +443,7 @@ a.design:hover {
     margin: 0px;
     font-size: 16px;
     box-sizing: border-box;
-    font-family: Josefin-Sans-Regular;
+    font-family: Josefin Sans;
     background-color: #282828;
     width: 95%;
     z-index: 1;
@@ -451,12 +466,14 @@ a.mail-link:hover {
 }
 
 .column-text-align {
-    text-align: center; 
-    font-size: 18px; 
+    text-align: center;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
-.column.quick-links li,.column.products-links li,.column.industries-links {
+.column.quick-links li,
+.column.products-links li,
+.column.industries-links {
     line-height: 1.5;
 }
 
@@ -468,7 +485,7 @@ a.mail-link:hover {
 
 .footerlinks {
     display: flex;
-    width: 100%;    
+    width: 100%;
     justify-content: space-between;
     letter-spacing: 1px;
     font-weight: 700;
@@ -487,6 +504,7 @@ a.design {
         flex-wrap: wrap;
         width: 100%;
     }
+
     form#contactForm {
         width: 55%;
     }
@@ -495,19 +513,22 @@ a.design {
         flex-direction: column-reverse;
     }
 
-    .company-tab-ourmission-content, .company-tab-whyus-content {
+    .company-tab-ourmission-content,
+    .company-tab-whyus-content {
         width: auto;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .column-wide{
+    .column-wide {
         padding-right: 0 !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .column, .column-wide {
+
+    .column,
+    .column-wide {
         width: 100%;
     }
 
@@ -539,14 +560,18 @@ a.design {
 }
 
 @media only screen and (max-width: 768px) and (min-width: 1023px) {
-    .column-wide{
+    .column-wide {
         width: unset !important;
     }
 }
 
 @media only screen and (max-width: 425px) {
-    .column.quick-links, .column-wide, .column.products-links, .column.industries-links {
-        padding-left:25px;
+
+    .column.quick-links,
+    .column-wide,
+    .column.products-links,
+    .column.industries-links {
+        padding-left: 25px;
     }
 
     .column.quick-links {
@@ -561,8 +586,8 @@ a.design {
         text-align: left;
     }
 
-    .FooterContant  {
-        flex-wrap: wrap; 
+    .FooterContant {
+        flex-wrap: wrap;
         justify-content: unset !important;
     }
 

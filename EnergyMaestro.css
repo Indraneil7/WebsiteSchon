@@ -1,15 +1,14 @@
 body {
     margin: 0px;
-    font-family: "Josefin-Sans";
+    font-family: "Josefin Sans";
 }
 
 
 .header {
-    position: relative; /* This makes the header's positioning relative to its normal position */
-    z-index: 10; /* Higher value to make sure it appears above the banner */
+    position: relative;
+    z-index: 10;
     width: 90%;
     margin: auto;
-    margin-top: 15px;
 }
 
 @media screen and (min-device-width: 1440px) {
@@ -35,6 +34,11 @@ body {
 .energy-title {
     color: #00ff74;
     text-align: center;
+    padding: 0px 0px 10px;
+}
+
+.energy-title h2 {
+    margin: 10px 0px 0px;
 }
 
 .energy-maestro-header {
@@ -47,7 +51,11 @@ body {
     justify-content: space-around;
 }
 
-.empowering-section, .ev-structure-section, .energy-cost-section, .integrated-crm-section, .app-integration-section {
+.empowering-section,
+.ev-structure-section,
+.energy-cost-section,
+.integrated-crm-section,
+.app-integration-section {
     padding: 30px 0px;
     width: 80%;
     margin: auto;
@@ -55,7 +63,6 @@ body {
 
 h1.energy-page-title {
     color: #28b83f;
-    font-size: 32px;
 }
 
 h1.energy-page-title-center {
@@ -64,7 +71,10 @@ h1.energy-page-title-center {
     font-size: 28px;
 }
 
-.ev-management-part, .energy-cost-part, .integrated-crm-part, .energy-integration-part {
+.ev-management-part,
+.energy-cost-part,
+.integrated-crm-part,
+.energy-integration-part {
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -88,7 +98,10 @@ h1.title {
     align-content: center;
 }
 
-.ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+.ev-management-content,
+.energy-cost-content,
+.integrated-crm-content,
+.energy-integration-content {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     background-color: #fff;
@@ -109,7 +122,7 @@ button.clikable-button-energy-page {
     background: #333;
     border: 0px;
     font-size: 20px;
-    font-family: josefin-sans;
+    font-family: Josefin Sans;
     font-weight: 500;
     margin: 30px 0px;
     border-radius: 20px;
@@ -126,10 +139,13 @@ button.clikable-button-energy-page:hover {
 }
 
 @media screen and (max-width: 425px) {
-    .empowering-title, .ev-management-part {
+
+    .empowering-title,
+    .ev-management-part {
         display: flex;
         flex-direction: column;
     }
+
     h1.title {
         font-size: 26px;
     }
@@ -139,28 +155,48 @@ button.clikable-button-energy-page:hover {
     .empower-content {
         padding: 30px 10px;
     }
-    .ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+
+    .ev-management-content,
+    .energy-cost-content,
+    .integrated-crm-content,
+    .energy-integration-content {
         padding: 30px 20px;
         width: 50%;
     }
-    .empowering-section, .ev-structure-section, .energy-cost-section, .integrated-crm-section, .app-integration-section {
+
+    .empowering-section,
+    .ev-structure-section,
+    .energy-cost-section,
+    .integrated-crm-section,
+    .app-integration-section {
         padding: 30px 0px;
         width: 90%;
         margin: auto;
     }
-    h1.energy-page-title-center, h1.energy-page-title {
+
+    h1.energy-page-title-center,
+    h1.energy-page-title {
         font-size: 24px;
     }
+
     p.content-align {
         font-size: 16px;
     }
-    .ev-management-part, .energy-cost-part, .integrated-crm-part, .energy-integration-part {
+
+    .ev-management-part,
+    .energy-cost-part,
+    .integrated-crm-part,
+    .energy-integration-part {
         gap: 30px;
     }
 }
 
 @media screen and (max-width: 1440px) {
-    .ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+
+    .ev-management-content,
+    .energy-cost-content,
+    .integrated-crm-content,
+    .energy-integration-content {
         padding: 50px 70px;
         width: 40%;
     }
@@ -173,28 +209,40 @@ button.clikable-button-energy-page:hover {
         flex-direction: column;
         gap: 50px;
     }
-    .ev-management-part, .energy-cost-part, .integrated-crm-part, .energy-integration-part {
+
+    .ev-management-part,
+    .energy-cost-part,
+    .integrated-crm-part,
+    .energy-integration-part {
         display: flex;
         margin: auto;
         align-items: center;
         flex-direction: column;
         gap: 50px;
     }
+
     .empower-content {
         padding: 0px 0px;
         width: auto;
         align-content: center;
     }
-    .ev-management-content, .energy-cost-content, .integrated-crm-content, .energy-integration-content {
+
+    .ev-management-content,
+    .energy-cost-content,
+    .integrated-crm-content,
+    .energy-integration-content {
         padding: 50px 30px;
         width: auto;
     }
-    h1.energy-page-title-center, h1.energy-page-title {
+
+    h1.energy-page-title-center,
+    h1.energy-page-title {
         font-size: 24px;
     }
+
     img.vector-icon {
         width: 100%;
-    }    
+    }
 }
 
 /* header css */
@@ -237,7 +285,7 @@ button.clikable-button-energy-page:hover {
 }
 
 .dropdown .dropbtn {
-    font-size: 20px;    
+    font-size: 20px;
     border: none;
     outline: none;
     color: #333;
@@ -258,14 +306,15 @@ button.clikable-button-energy-page:hover {
 
 .dropdown-content a {
     float: none;
-    color: black;  
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover,
+.dropdown:hover .dropbtn {
     color: #28b83f;
 }
 
@@ -302,7 +351,9 @@ a.btnContactUs:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
         display: none;
     }
 
@@ -331,7 +382,7 @@ a.btnContactUs:hover {
         position: relative;
     }
 
-    .topnav.responsive a {        
+    .topnav.responsive a {
         font-size: 16px;
         font-weight: 600;
         float: none;
@@ -354,12 +405,13 @@ a.btnContactUs:hover {
         width: 100%;
         text-align: left;
     }
+
     a.btnContactUs {
         text-align: center !important;
     }
 }
 
-@media only screen and (min-width: 426px ) and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     .topnav a {
         font-size: 16px;
     }
@@ -369,7 +421,7 @@ a.btnContactUs:hover {
     }
 }
 
-@media  only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .header {
         padding: 15px 3% 0px 3% !important;
     }
@@ -390,7 +442,7 @@ a.btnContactUs:hover {
     }
 }
 
-@media  only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     a.icon {
         margin-top: 3px;
     }
@@ -417,41 +469,41 @@ a.btnContactUs:hover {
 
 .dropbtn {
     background-color: #fff;
-    color: #000; 
-    padding: 14px 16px; 
-    font-size: 20px; 
-    border: none; 
-    cursor: pointer; 
+    color: #000;
+    padding: 14px 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown-content {
-    display: none; 
-    position: absolute; 
-    background-color: white; 
-    min-width: 180px; 
-    z-index: 1; 
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    z-index: 1;
 }
 
 .dropdown-content a {
-    color: black; 
-    padding: 12px 16px; 
+    color: black;
+    padding: 12px 16px;
     text-align: left;
-    text-decoration: none; 
+    text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
     color: #28b83f;
-    border-bottom: 1px solid #28b83f; 
+    border-bottom: 1px solid #28b83f;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; 
+    display: block;
 }
 
 .main-header-btntalk {
-    float: right; 
+    float: right;
 }
 
 @media only screen and (max-width: 768px) {
@@ -479,7 +531,7 @@ a.btnContactUs:hover {
 }
 
 .column-wide {
-    float: left;            
+    float: left;
     letter-spacing: 1.7px;
     padding: 25px 10px 10px 10px;
 }
@@ -491,7 +543,7 @@ a.btnContactUs:hover {
 }
 
 li {
-    list-style:none;
+    list-style: none;
     padding-left: 3px;
     font-size: 18px;
 }
@@ -507,8 +559,8 @@ a.design:hover {
 }
 
 .column-wide {
-    background-color:#282828; 
-    color: #fff; 
+    background-color: #282828;
+    color: #fff;
     padding-right: 50px;
 }
 
@@ -516,7 +568,7 @@ a.design:hover {
     margin: 0px;
     font-size: 16px;
     box-sizing: border-box;
-    font-family: Josefin-Sans;
+    font-family: Josefin Sans;
     width: 95%;
     z-index: 1;
     margin: auto;
@@ -538,8 +590,8 @@ a.mail-link:hover {
 }
 
 .column-text-align {
-    text-align: center; 
-    font-size: 18px; 
+    text-align: center;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
@@ -547,7 +599,9 @@ p.txt-align {
     font-size: 18px;
 }
 
-.column.quick-links li,.column.products-links li,.column.industries-links {
+.column.quick-links li,
+.column.products-links li,
+.column.industries-links {
     line-height: 1.5;
 }
 
@@ -576,7 +630,7 @@ a.design {
 }
 
 @media only screen and (max-width: 1024px) {
-    .column-wide{
+    .column-wide {
         padding-right: 0 !important;
     }
 }
@@ -610,7 +664,7 @@ a.design {
 }
 
 @media only screen and (max-width: 768px) and (min-width: 1023px) {
-    .column-wide{
+    .column-wide {
         width: unset !important;
     }
 }
@@ -628,8 +682,8 @@ a.design {
         text-align: left;
     }
 
-    .FooterContant  {
-        flex-wrap: wrap; 
+    .FooterContant {
+        flex-wrap: wrap;
         justify-content: unset !important;
     }
 

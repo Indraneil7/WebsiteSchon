@@ -1,495 +1,518 @@
-body{margin: 0;padding: 0;}
+body {
+    margin: 0;
+    padding: 0;
+}
 
-            /* Header css */
-            .topnav {
-                overflow: hidden;
-                background-color: #fff;
-                border: 1px solid #28b83f;
-                box-shadow: 0 4px 10.2px 5px rgba(0, 0, 0, 0.25);
-                border-radius: 40px;
-                display: flex;
-                justify-content: space-between;
-            }
+/* Header css */
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #28b83f;
+    box-shadow: 0 4px 10.2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
-            .topnav a {
-                float: left;
-                display: block;
-                color: #333;
-                text-align: center;
-                padding: 5.5px 16px;
-                text-decoration: none;
-                font-size: 20px;
-                font-weight: 500;
-                font-family: Josefin Sans;
-            }
+.topnav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 5.5px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Josefin Sans;
+}
 
-            .topnav .icon {
-                display: none;
-            }
+.topnav .icon {
+    display: none;
+}
 
-            .dropdown {
-                float: left;
-                overflow: hidden;
-            }
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
 
-            .header {
-                padding: 15px 5% 0px 5%;
-            }
+.header {
+    padding: 15px 5% 0px 5%;
+}
 
-            .dropdown .dropbtn {
-                font-size: 20px;    
-                border: none;
-                outline: none;
-                color: #333;
-                padding: 14px 16px;
-                background-color: inherit;
-                font-family: inherit;
-                margin: auto;
-                font-weight: 500;
-            }
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: auto;
+    font-weight: 500;
+}
 
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                z-index: 1;
-            }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
 
-            .dropdown-content a {
-                float: none;
-                color: black;  
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-            .topnav a:hover, .dropdown:hover .dropbtn {
-                color: #28b83f;
-            }
-            
-            .dropdown-content a:hover {
-                background-color: #ddd;
-                color: black;
-            }
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    color: #28b83f;
+}
 
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
-            a.menu-align {
-                padding: 15px;
-            }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-            a.btnContactUs {
-                float: right;
-                background: #28b83f;
-                border-radius: 20px;
-                color: #fff;
-                margin: 10px;
-                width: auto;
-                padding: 5px 15px;
-            }
+a.menu-align {
+    padding: 15px;
+}
 
-            a.btnContactUs:hover {
-                color: #333;
-            }
+a.btnContactUs {
+    float: right;
+    background: #28b83f;
+    border-radius: 20px;
+    color: #fff;
+    margin: 10px;
+    width: auto;
+    padding: 5px 15px;
+}
 
-            .dropdown-content {
-                margin-top: 3px;
-            }
+a.btnContactUs:hover {
+    color: #333;
+}
 
-            @media only screen and (max-width: 768px) {
-                .topnav a:not(:first-child), .dropdown .dropbtn {
-                    display: none;
-                }
+.dropdown-content {
+    margin-top: 3px;
+}
 
-                .topnav a.icon {
-                    float: right;
-                    display: block;
-                }
-            }
+@media only screen and (max-width: 768px) {
 
-            @media only screen and (max-width: 768px) {
-                .topnav.responsive {
-                    position: relative;
-                }
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
 
-                .topnav.responsive a {        
-                    font-size: 16px;
-                    font-weight: 600;
-                    float: none;
-                    display: block;
-                    text-align: left;
-                }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
 
-                .topnav.responsive .dropdown {
-                    float: none;
-                }
+@media only screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+    }
 
-                .topnav.responsive .dropdown-content {
-                    position: relative;
-                }
+    .topnav.responsive a {
+        font-size: 16px;
+        font-weight: 600;
+        float: none;
+        display: block;
+        text-align: left;
+    }
 
-                .topnav.responsive .dropdown .dropbtn {
-                    font-size: 16px;
-                    font-weight: 600;
-                    display: block;
-                    width: 100%;
-                    text-align: left;
-                }
-            }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
 
-            @media only screen and (min-width: 426px ) and (max-width: 768px) {
-                .topnav a {
-                    font-size: 16px;
-                }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
 
-                .dropdown .dropbtn {
-                    font-size: 16px;
-                }
-            }
+    .topnav.responsive .dropdown .dropbtn {
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
 
-            @media  only screen and (max-width: 768px) {
-                .header {
-                    padding: 15px 3% 0px 3% !important;
-                }
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .topnav a {
+        font-size: 16px;
+    }
 
-                a.logo {
-                    padding: unset !important;
-                }
+    .dropdown .dropbtn {
+        font-size: 16px;
+    }
+}
 
-                .topnav {
-                    padding: 0px 0px 0px 10px;
-                }
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 15px 3% 0px 3% !important;
+    }
 
-                .product-description-content {
-                    width: 100% !important;
-                }
+    a.logo {
+        padding: unset !important;
+    }
 
-                .product-place {
-                    display: flex;
-                    gap: 15px;
-                    align-items: stretch;
-                    width: 100%;
-                }
+    .topnav {
+        padding: 0px 0px 0px 10px;
+    }
 
-                .product-image {
-                    text-align: center;
-                }
-            }
+    .product-description-content {
+        width: 100% !important;
+    }
 
-            @media only screen and (min-width: 768px) {
-                .dropdown {
-                    display: inline-block;
-                    font-family: josefin sans;
-                }
-            }
+    .product-place {
+        display: flex;
+        gap: 15px;
+        align-items: stretch;
+        width: 100%;
+    }
 
-            /* @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-image {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .dropdown {
+        display: inline-block;
+        font-family: josefin sans;
+    }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
                 .product {
                     gap: 150px !important;
                 }
             } */
 
-            @media  only screen and (max-width: 425px) {
-                a.icon {
-                    margin-top: 3px;
-                }
-
-                .topnav {
-                    border-radius: 20px;
-                    flex-direction: column !important;
-                }
-
-                a.btnContactUs {
-                    border-radius: 10px;
-                    text-align: center !important;
-                }
-
-                .header {
-                    background-size: unset !important;
-                }
-                .product {
-                    flex-direction: column;
-                }
-                .product-description-content {
-                    width: auto !important;
-                }
-                .product-place {
-                    display: flex;
-                    gap: 15px;
-                    justify-content: center;
-                    align-items: stretch;
-                }
-                .product-place-1 {
-                    width: 100% !important;
-                }
-                .product-image img {
-                    width: 100%;
-                }
-                .product-image {
-                    width: 100% !important;
-                }
-            }
-
-            .dropdown {
-                display: inline-block;
-                font-family: josefin sans;
-            }
-
-            .dropbtn {
-                /* font-family: josefin sans; */
-                background-color: #fff;
-                color: #000; 
-                padding: 14px 16px; 
-                font-size: 20px; 
-                border: none; 
-                cursor: pointer; 
-            }
-
-            .dropdown-content {
-                display: none; 
-                position: absolute; 
-                background-color: white; 
-                min-width: 180px; 
-                z-index: 1; 
-            }
-
-            .dropdown-content a {
-                color: black; 
-                padding: 12px 16px; 
-                text-align: left;
-                text-decoration: none; 
-                display: block;
-            }
-
-            .dropdown-content a:hover {
-                background-color: #f1f1f1;
-                color: #28b83f;
-                border-bottom: 1px solid #28b83f; 
-            }
-
-            .dropdown:hover .dropdown-content {
-                display: block; 
-            }
-
-            .main-header-btntalk {
-                float: right; 
-            }
-
-            @media only screen and (max-width: 768px) {
-                .main-header-menu {
-                    gap: 0px;
-                }
-
-                .main-header-menu a {
-                    padding: 14px 10px;
-                }
-            }
-
-            @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
-                .main-header-logo {
-                    display: flex;
-                    justify-content: space-between;
-                }
-            }
-
-        /* Footer css */
-            .column {
-                float: left;
-                padding: 25px 10px;
-            }
-        
-            .column-wide {
-                float: left;            
-                letter-spacing: 1.7px;
-                padding: 25px 10px 10px 10px;
-            }
-        
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            li {
-                list-style:none;
-                padding-left: 3px;
-                font-size: 18px;
-            }
-
-            a.design {
-                text-decoration: none;
-                color: #fff;
-            }
-
-            a.design:hover {
-                color: #23b54b;
-                border-bottom: 1px solid #23b54b;
-            }
-        
-            .column-wide {
-                background-color:#282828; 
-                color: #fff; 
-                padding-right: 50px;
-            }
-        
-            .column.quick-links {
-                background-color:#282828; 
-                color: #fff;
-            }
-
-            .main-body-footer {
-                margin: 0px;
-                font-size: 16px; 
-                box-sizing: border-box;
-                font-family: Josefin-Sans-Regular;
-                padding: 20px 0px;
-                width: 100%;
-                z-index: 1;
-            }
-
-            footer {
-                background: #282828;
-                box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.25);
-                color: #fff;
-            }
-
-            a.mail-link {
-                text-decoration: none;
-                color: white;
-            }
-
-            a.mail-link:hover {
-                color: #28b83f;
-            }
-
-            .column-text-align {
-                text-align: center; 
-                font-size: 18px; 
-                margin-bottom: 5px;
-            }
-
-            .column.quick-links li,.column.products-links li,.column.industries-links {
-                line-height: 1.5;
-            }
-
-            .FooterContant {
-                display: flex;
-                justify-content: space-evenly;
-                text-align: left;
-            }
-
-            .footerlinks {
-                display: flex;
-                width: 95%;    
-                justify-content: space-between;
-                letter-spacing: 1px;
-                font-weight: 700;
-            }
-
-            a.design {
-                font-weight: 500;
-            }
-
-            @media only screen and (max-width: 1024px) {
-                .column-wide{
-                    padding-right: 0 !important;
-                }
-            }
-
-            @media only screen and (max-width: 600px) {
-                .column, .column-wide {
-                    width: 100%;
-                }
-
-                .column {
-                    float: left;
-                    width: 100%;
-                    padding: 10px;
-                    height: 200px;
-                }
-
-                .column-wide {
-                    float: left;
-                    width: 100%;
-                    padding: 10px;
-                    height: 250px;
-                }
-            }
-
-            @media only screen and (max-width: 768px) {
-                .column-wide {
-                    padding-right: 0;
-                    margin: auto;
-                }
-
-                .footerlinks {
-                    width: unset !important;
-                    gap: 25px;
-                    letter-spacing: 0px !important;
-                    flex-wrap: wrap;
-                }
-                .product {
-                    display: flex;
-                    gap: 15px;
-                    width: 100%;
-                    justify-content: space-evenly;
-                    flex-direction: column;
-                }
-            }
-
-            @media only screen and (max-width: 768px) and (min-width: 1023px) {
-                .column-wide{
-                    width: unset !important;
-                }
-            }
-
-            @media only screen and (max-width: 425px) {
-                .column.quick-links, .column-wide, .column.products-links, .column.industries-links {
-                    padding-left:25px;
-                }
-
-                .column.quick-links {
-                    height: 150px;
-                }
-
-                .column.products-links {
-                    height: 170px;
-                }
-
-                .column-text-align {
-                    text-align: left;
-                }
-
-                .FooterContant  {
-                    flex-wrap: wrap; 
-                    justify-content: unset !important;
-                }
-
-                .footerlinks {
-                    flex-wrap: wrap;
-                    width: 100%;
-                }
-
-                .column-wide {
-                    margin-top: 15px;
-                    border-top: 1px solid #444;
-                    width: 100% !important;
-                }
-
-                .column.industries-links {
-                    margin-bottom: 20px;
-                }
-            }
-
-    /* Main Body Content */
-    body{
-        font-family: 'Josefin Sans'!important;
+@media only screen and (max-width: 425px) {
+    a.icon {
+        margin-top: 3px;
     }
-.headerbanner{background-image: url('https://schonmobility.netlify.app/image%2027.png'); 
+
+    .topnav {
+        border-radius: 20px;
+        flex-direction: column !important;
+    }
+
+    a.btnContactUs {
+        border-radius: 10px;
+        text-align: center !important;
+    }
+
+    .header {
+        background-size: unset !important;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .product-description-content {
+        width: auto !important;
+    }
+
+    .product-place {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .product-place-1 {
+        width: 100% !important;
+    }
+
+    .product-image img {
+        width: 100%;
+    }
+
+    .product-image {
+        width: 100% !important;
+    }
+}
+
+.dropdown {
+    display: inline-block;
+    font-family: josefin sans;
+}
+
+.dropbtn {
+    /* font-family: josefin sans; */
+    background-color: #fff;
+    color: #000;
+    padding: 14px 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #28b83f;
+    border-bottom: 1px solid #28b83f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-header-btntalk {
+    float: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header-menu {
+        gap: 0px;
+    }
+
+    .main-header-menu a {
+        padding: 14px 10px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    .main-header-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Footer css */
+.column {
+    float: left;
+    padding: 25px 10px;
+}
+
+.column-wide {
+    float: left;
+    letter-spacing: 1.7px;
+    padding: 25px 10px 10px 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li {
+    list-style: none;
+    padding-left: 3px;
+    font-size: 18px;
+}
+
+a.design {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.design:hover {
+    color: #23b54b;
+    border-bottom: 1px solid #23b54b;
+}
+
+.column-wide {
+    background-color: #282828;
+    color: #fff;
+    padding-right: 50px;
+}
+
+.column.quick-links {
+    background-color: #282828;
+    color: #fff;
+}
+
+.main-body-footer {
+    margin: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Josefin Sans;
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+footer {
+    background: #282828;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+a.mail-link {
+    text-decoration: none;
+    color: white;
+}
+
+a.mail-link:hover {
+    color: #28b83f;
+}
+
+.column-text-align {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.column.quick-links li,
+.column.products-links li,
+.column.industries-links {
+    line-height: 1.5;
+}
+
+.FooterContant {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.footerlinks {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+a.design {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+    .column-wide {
+        padding-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .column,
+    .column-wide {
+        width: 100%;
+    }
+
+    .column {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+    }
+
+    .column-wide {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .column-wide {
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .footerlinks {
+        width: unset !important;
+        gap: 25px;
+        letter-spacing: 0px !important;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1023px) {
+    .column-wide {
+        width: unset !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .column.quick-links,
+    .column-wide,
+    .column.products-links,
+    .column.industries-links {
+        padding-left: 25px;
+    }
+
+    .column.quick-links {
+        height: 150px;
+    }
+
+    .column.products-links {
+        height: 170px;
+    }
+
+    .column-text-align {
+        text-align: left;
+    }
+
+    .FooterContant {
+        flex-wrap: wrap;
+        justify-content: unset !important;
+    }
+
+    .footerlinks {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .column-wide {
+        margin-top: 15px;
+        border-top: 1px solid #444;
+        width: 100% !important;
+    }
+
+    .column.industries-links {
+        margin-bottom: 20px;
+    }
+}
+
+/* Main Body Content */
+body {
+    font-family: 'Josefin Sans' !important;
+}
+
+.headerbanner {
+    background-image: url('https://schonmobility.netlify.app/image%2027.png');
     position: relative;
     overflow: hidden;
     min-height: 204px;
@@ -497,28 +520,36 @@ body{margin: 0;padding: 0;}
     background-size: cover;
     background-repeat: no-repeat;
 }
-.pagename{
+
+.pagename {
     background-color: #282828;
 
 }
-.pagename h1{
+
+.pagename h1 {
     color: #23b54b;
     margin: auto;
     text-align: center;
     font-size: 23px;
     padding: 5px 0px;
 }
-.main-body-content{
+
+.main-body-content {
     padding: 30px;
 }
 
-.product-place{
+.product-place {
     display: flex;
     gap: 15px;
     align-items: center;
 }
-.product-place p{font-size: 11px;margin: 0;}
-.product-place-1{
+
+.product-place p {
+    font-size: 11px;
+    margin: 0;
+}
+
+.product-place-1 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -527,25 +558,30 @@ body{margin: 0;padding: 0;}
     text-align: center;
     overflow: hidden;
 }
+
 .product-place-1 img {
     max-width: 40%;
 }
-.product{
+
+.product {
     display: flex;
-    gap: 15px;  
-    width: 100%;  
-    justify-content:space-evenly;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-evenly;
 }
-.product-description-content{
+
+.product-description-content {
     width: 50%;
 }
+
 /* .product-image{
     width: 30%;
 } */
 .product-description p {
     font-size: 20px;
 }
-.product-place-1 p{
+
+.product-place-1 p {
     font-size: 12px;
 }
 
@@ -556,18 +592,22 @@ body{margin: 0;padding: 0;}
         justify-content: space-between;
         align-items: center;
     }
+
     .topnav {
         align-items: normal;
         flex-direction: column;
     }
+
     a.btnContactUs {
         text-align: center !important;
     }
 }
 
 .header {
-    position: relative; /* This makes the header's positioning relative to its normal position */
-    z-index: 10; /* Higher value to make sure it appears above the banner */
+    position: relative;
+    /* This makes the header's positioning relative to its normal position */
+    z-index: 10;
+    /* Higher value to make sure it appears above the banner */
     width: 90%;
     margin: auto;
 }
